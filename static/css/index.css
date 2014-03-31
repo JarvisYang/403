@@ -1,0 +1,509 @@
+html{
+	height: 1020px;
+	background-color: #fff;
+	text-align: center;
+}
+
+body{
+	position: relative;
+	display: inline-block;
+	width: 1000px;
+	height: 100%;
+	margin:0px auto;
+}
+
+.header{
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 110px;
+}
+
+.main{
+	display: inline-block;
+	width: 100%;
+	height: 717px;
+
+	position: relative;
+
+	border-bottom: solid #c9c9c9 6px;
+}
+
+.footer{
+	position: absolute;
+	top: 833px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	
+	display: inline-block;
+	width: 100%;
+	height: auto;
+
+	-webkit-background-size: 11px 15px;
+	background-size: 11px 15px;
+	background-repeat: repeat;
+	background-image: url(../img/hover8.png);
+
+	border-top: solid #dcdcdc 1px;
+	text-align: center;
+}
+
+.hdLeft{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 22px;
+	margin:auto 0px;
+
+
+	display: inline-block;
+	width: 238px;
+	height: 80px;
+	background-image: url(../img/403Logo1.jpg);
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.hdRight{
+	position: absolute;
+	top:10px;
+	right: 16px;
+
+	display: inline-block;
+	width: 120px;
+	height: 120px;
+	z-index: 12;
+}
+
+.hdRight>div{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin:0px auto;
+
+	display: inline-block;
+	width: 100%;
+
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.hdRightShop1{
+	background-image: url(../img/shop1.png);
+	height: 100%;
+}
+.hdRightShop2{
+	background-image: url(../img/shop2.png);
+	height: ;
+}
+
+/*****menu******/
+.menu{
+	display: inline-block;
+	width: 100%;
+	height: 9px;
+
+	position: absolute;
+	top: 0px;
+	left: 0px;
+
+	z-index: 11;
+}
+
+.menuTop{
+	display: inline-block;
+	height:9px; 
+	width: auto;
+	background-color: #c9c9c9;
+	
+	position: absolute;
+	top:0px;
+	left: 50px;
+	right: 0px;
+}
+
+.menuHome{
+	display: inline-block;
+	width: 50px;
+	height: 31px;
+
+	position: absolute;
+	left: 0px;
+	top: 0px;
+
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-image: url(../img/home.png);
+}
+
+/*******content******/
+
+.content{
+	display: inline-block;
+	width: 100%;
+}
+
+.ctRow1{
+	display: inline-block;
+	width: 100%;
+	height: 325px;
+
+	position: relative;
+}
+
+.ctRow1>a{
+	display: inline-block;
+	
+	position: absolute;
+
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.artCenter{
+	width: 656px;
+	height: 100%;
+
+	left: 0px;
+	top: 0px;
+	
+	background-image: url(../img/artCenter.jpg);
+}
+
+.creativeStudio{
+	width: 261px;
+	height: 100%;
+
+	top: 0px;
+	left: 658px;
+	background-image: url(../img/create.jpg);
+}
+
+.communicate{
+	display: inline-block;
+	width: 78px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+.communicate>a{
+	display: inline-block;
+	width: 100%;
+	height: 78px;
+	margin-bottom: 4px;
+
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.login{
+	background-image: url(../img/login.jpg);
+	margin-bottom: 5px!important;
+}
+.douban{
+	background-image: url(../img/douban.jpg);
+}
+.weibo{
+	background-image: url(../img/weibo.jpg);
+}
+.wechat{
+	background-image: url(../img/wechat.jpg);
+}
+
+.ctRow2{
+	display: inline-block;
+	width: 100%;
+	height: 262px;
+	margin-top: 2px;
+
+	position: relative;
+}
+
+.ctRow2>a,.ctRow2>div{
+	display: inline-block;
+	height: 100%;
+
+	position: absolute;
+	top: 0px;
+}
+
+.mainZone{
+	width: 600px;
+	left: 0px;
+}
+
+.mainZone>a{
+	display: inline-block;
+	width: 148px;
+	height: 100%;
+
+	position: absolute;
+	margin-left: 2px;
+
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.theaterZone{
+	background-image: url(../img/theater.jpg);
+	left: 0px;
+}
+.artSpaceZone{
+	background-image: url(../img/artspace.jpg);
+	left: 150px;
+}
+.cafeZone{
+	background-image: url(../img/cafe.jpg);
+	left: 300px;
+}
+.workShopZone{
+	background-image: url(../img/workshop.jpg);
+	left: 450px;
+}
+
+.exchangeDiv{
+	width: 156px;
+	left: 602px;
+}
+
+.exchangeDiv>a{
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 2px;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.interaction{
+	height: 110px;
+	background-image: url(../img/shequ.jpg);
+}
+.cooperate{
+	height: 113px;
+	background-image: url(../img/hezuo.jpg);
+}
+.contectDiv{
+	height: 35px;
+}
+
+.contectDiv>a{
+	display: inline-block;
+	height: 100%;
+	width: 77px;
+	position: relative;
+}
+
+.contectByMagazine{
+	background-color: #696969;
+	margin-right: 2px;
+}
+.contectByMagazine>div{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin:auto;
+	display: inline-block;
+	width: 20px;
+	height: 17px;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-image: url(../img/magazine.jpg);
+	
+}
+.contectByPhone{
+	background-color: #a1a1a1;
+}
+.contectByPhone>div{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin:auto;
+	display: inline-block;
+	width: 9px;
+	height: 22px;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-image: url(../img/phone.jpg);
+}
+
+.childrenZone{
+	width: 240px;
+	left:760px;
+
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-image: url(../img/children.jpg);
+}
+
+.adv{
+	display: inline-block;
+	width: 100%;
+	height: 127px;
+	position: relative;
+}
+
+.about403{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 14px;
+	margin: auto 0px;
+
+	display: inline-block;
+	width: 113px;
+	height: 114px;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-image: url(../img/403Logo2.jpg);
+}
+
+.advShow{
+	display: inline-block;
+	height: 100%;
+	width: 830px;
+
+	position: absolute;
+	top: 0px;
+	right: 8px;
+}
+
+.toLeftDiv{
+	display: inline-block;
+	width: 18px;
+	height: 100%;
+
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+.toLeft{
+	display: inline-block;
+	width: 100%;
+	height: 50px;
+
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	margin:auto 0px;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-image: url(../img/toLeft.png);
+}
+
+.toRightDiv{
+	display: inline-block;
+	width: 18px;
+	height: 100%;
+
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+.toRight{
+	display: inline-block;
+	width: 100%;
+	height: 50px;
+
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	margin:auto 0px;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-image: url(../img/toRight.png);
+}
+
+.footMain{
+	display: inline-block;
+	width: 675px;
+	height: 80px;
+
+	margin:60px auto 0px;
+	text-align: left;
+}
+
+.ftCode{
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-image: url(../img/code.jpg);
+}
+
+.ftRight{
+	display: inline-block;
+	height: 100%;
+	width: 580px;
+	margin-left: 11px;
+	position: relative;
+}
+
+.ftAbout403{
+	display: inline-block;
+	width: 100%;
+	height: 53px;
+	position: absolute;
+	top: 0px;
+}
+.ftContectNum{
+	display: inline-block;
+	width: 261px;
+	height: 100%;
+	
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-image: url(../img/contect.jpg);
+}
+.ftContectZite{
+	display: inline-block;
+	width: 270px;
+	height: 100%;
+
+	position: absolute;
+	right: 25px;
+}
+
+.ftContectZite>p{
+	margin:0px;
+	font-size: 15px;
+	line-height: 18px;
+	color:#5f5d5d;
+}
+
+.copyRightDiv{
+	display: inline-block;
+	width: 100%;
+	height: 19px;
+	position: absolute;
+	bottom: 0px;
+}
+.copyright{
+	font-size: 10px;
+	line-height: 19px;
+	color:#fff;
+}
