@@ -7,6 +7,8 @@
 	var hasOverMenuShowBox = false;
 	var hasOverMenuShow = false;
 	var canUnderlineMove = false;
+	var canHDRightMove = true;
+	var HDRightMoveTime = null;
 
 	function $(id){
 	    return document.getElementById(id);
@@ -73,7 +75,6 @@
 
 	function menuShow(){
 		setTimeout(function(){
-			canUnderlineMove = true;
 			$("menu").onmouseover = function(){
 				menuShow()
 			};
@@ -112,6 +113,7 @@
 			                    ++countTime;
 			                }
 			                else{
+			                	canUnderlineMove = true;
 			                    obj3.style.width = objWidth2 + "px";
 			                    clearInterval(moveTime2);
 			                };
@@ -125,12 +127,59 @@
 
 	function underlineMove(obj){
 		if(canUnderlineMove){
-			const OBJ_MARGIN = 14;
-			var objLeft = obj.offsetLeft;
+			const OBJ_MARGIN = 10;
 			var objWidth = parseFloat(getCss(obj).width);
-
+			var objRight = 970 - obj.offsetLeft - objWidth - OBJ_MARGIN;
+			console.log(objRight)
 			$("menuShowUnderline").style.width = (objWidth + OBJ_MARGIN*2) + "px";
-			$("menuShowUnderline").style.left = (objLeft - OBJ_MARGIN) + "px";
+			$("menuShowUnderline").style.right = objRight + "px";
+		};
+	};
+
+	function hdRightMove(){
+		var shopShowNum = 0;
+		var shopObj = $("hdRight").children;
+		setTimeout(function(){
+			move();
+		},10000);
+		function move(){
+			const T = 15;
+			var eachMove = 100.0/T;
+			var countTime = 1;
+			var objWidth = parseFloat(getCss(shopObj[shopShowNum]).width);
+			HDRightMoveTime = setInterval(function(){
+				if(eachMove > 0){
+					var changeWidth = objWidth - countTime*eachMove;
+					if(changeWidth > 0){
+						countTime++;
+						shopObj[shopShowNum].style.width = changeWidth + "px";
+					}
+					else{
+						countTime = 1;
+						shopObj[shopShowNum].style.width = "0px";
+						eachMove *= -1;
+						shopShowNum = shopShowNum?0:1;
+					};
+				}
+				else{
+					var changeWidth = 0 - countTime*eachMove;
+					if(changeWidth < 120){
+						countTime++;
+						shopObj[shopShowNum].style.width = changeWidth + "px";
+					}
+					else{
+						countTime = 1;
+						shopObj[shopShowNum].style.width = "120px";
+						eachMove *= -1;
+						clearInterval(HDRightMoveTime);
+						
+						setTimeout(function(){
+							move();
+						},10000);
+					};
+				};
+				
+			},8);
 		};
 	};
 
@@ -249,7 +298,7 @@
 				    			else{
 				    				canUnderlineMove = false;
 				    				$("menuShowUnderline").style.width = "0px";
-				    				$("menuShowUnderline").style.left = "0px";
+				    				$("menuShowUnderline").style.right = "0px";
 
 				    				$("menu").onmouseover = function(){};
 				    				obj1.style.width = "0px";
@@ -299,5 +348,6 @@
 
 	window.onload = function(){
 		eventBind();
+		hdRightMove();
 	};
 })()
