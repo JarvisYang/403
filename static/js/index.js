@@ -1,5 +1,12 @@
 (function(){
 	var ACMoveTime;
+	var hasOverMenu = false;
+	var hasOverMenuTop = false;
+	var hasOverMenuHome = false;
+	var hasOverMenuHomeBottom = false;
+	var hasOverMenuShowBox = false;
+	var hasOverMenuShow = false;
+	var canUnderlineMove = false;
 
 	function $(id){
 	    return document.getElementById(id);
@@ -55,6 +62,95 @@
 		};
 	};
 
+	function hasMenuShow(){
+		return hasOverMenu
+			||hasOverMenuTop
+			||hasOverMenuHome
+			||hasOverMenuHomeBottom
+			||hasOverMenuShowBox
+			||hasOverMenuShow;
+	};
+
+	function menuShow(){
+		setTimeout(function(){
+			canUnderlineMove = true;
+			$("menu").onmouseover = function(){
+				menuShow()
+			};
+			var obj1      = $("menuHomeBottom");
+			var obj2      = $("menuShow");
+			var obj3      = $("menuShowBox");
+			var objWidth1 = parseFloat(getCss(obj1).width);
+			var objWidth2 = parseFloat(getCss(obj2).width);
+			var objWidth3  = parseFloat(getCss(obj3).width);
+			var countTime = 1;
+			var extendLength;
+			const T = 30.0;
+			const EACH_MOVE  = objWidth2/T;
+
+			var moveTime1 = setInterval(function(){  
+			    if(!hasMenuShow()){
+			    	clearInterval(moveTime1);
+			    }
+			    else{
+			        var extendLength = objWidth1 + EACH_MOVE*countTime;
+			        obj1.style.width  = extendLength + "px";
+			        if(extendLength < 30){
+			            ++countTime;
+			        }
+			        else{
+			        	countTime = 1;
+			            obj1.style.width = "30px";
+			            var moveTime2 = setInterval(function(){  
+			    			var extendLength     = (objWidth3 + EACH_MOVE*countTime);
+			    			obj3.style.width = (extendLength) + "px";
+			                if(!hasMenuShow()){
+			                	clearInterval(moveTime1);
+			                	clearInterval(moveTime2);
+			                };
+			                if(extendLength < objWidth2){
+			                    ++countTime;
+			                }
+			                else{
+			                    obj3.style.width = objWidth2 + "px";
+			                    clearInterval(moveTime2);
+			                };
+			            },8);
+			            clearInterval(moveTime1);
+			        };
+			    };
+			},8);
+		},30);
+	};
+
+	function underlineMove(obj){
+		if(canUnderlineMove){
+			const OBJ_MARGIN = 14;
+			var objLeft = obj.offsetLeft;
+			var objWidth = parseFloat(getCss(obj).width);
+
+			$("menuShowUnderline").style.width = (objWidth + OBJ_MARGIN*2) + "px";
+			$("menuShowUnderline").style.left = (objLeft - OBJ_MARGIN) + "px";
+		};
+	};
+
+	function eventBind(){
+		var menuShowChild = $("menuShow").children;
+		var menuShowChildLength = menuShowChild.length;
+		var i = 0;
+		var blindTime = setInterval(function(){
+			if(i < menuShowChildLength){
+				menuShowChild[i].onmouseover = function(){
+					underlineMove(this);
+				};
+				i++;
+			}
+			else{
+				clearInterval(blindTime);
+			};
+		},0);
+	};
+
 	$("artCenter").onmouseover = function(){
 		hoverShow($("artCenterHover"),25);
 	};
@@ -105,5 +201,103 @@
 	};
 	$("about403").onmouseover = function(){
 		hoverShow($("about403Hover"),20);
+	};
+	$("menuHome").onmouseover = function(){
+		hasOverMenuHome = true;
+		menuShow();
+	};
+
+	$("menu").onmouseout = function(){
+		hasOverMenu = false;
+		setTimeout(function(){
+			if(!hasMenuShow()){
+				var obj1 = $("menuHomeBottom");
+				var obj2 = $("menuShow");
+				var obj3 = $("menuShowBox");
+				var objWidth1 = parseFloat(getCss(obj1).width);
+				var objWidth2 = parseFloat(getCss(obj2).width);
+				var objWidth3 = parseFloat(getCss(obj3).width);
+				var countTime    = 1;
+				var extendLength;
+				const T = 30.0;
+				const EACH_MOVE  = objWidth2/T;
+
+				var moveTime1 = setInterval(function(){  
+				    var extendLength = (objWidth3 - EACH_MOVE*countTime);
+				    obj3.style.width = extendLength + "px";
+				    if(hasMenuShow()){
+				    	clearInterval(moveTime1);
+				    }
+				    else{
+				    	if(extendLength > 0){
+				    	    ++countTime;
+				    	}
+				    	else{
+				    	    obj3.style.width = "0px";
+
+				    		countTime = 1;
+				    		var moveTime2 = setInterval(function(){
+				    			if(hasMenuShow()){
+				    				clearInterval(moveTime1);
+				    				clearInterval(moveTime2);
+				    			};
+				    			var extendLength = objWidth1 - EACH_MOVE*countTime;
+				    			obj1.style.width  = extendLength + "px";
+				    			if(extendLength > 0){
+				    			    ++countTime;
+				    			}
+				    			else{
+				    				canUnderlineMove = false;
+				    				$("menuShowUnderline").style.width = "0px";
+				    				$("menuShowUnderline").style.left = "0px";
+
+				    				$("menu").onmouseover = function(){};
+				    				obj1.style.width = "0px";
+				    				clearInterval(moveTime2);
+				    			}
+				    		},8);
+
+				    	    clearInterval(moveTime1);
+				    	};
+				    };
+				},8);
+			};
+		},30);		
+	};
+
+	$("menu").onmouseover = function(){
+		hasOverMenu = true;
+	};
+	$("menuTop").onmouseover = function(){
+		hasOverMenuTop = true;
+	};
+	$("menuHomeBottom").onmouseover = function(){
+		hasOverMenuHomeBottom = true;
+	};
+	$("menuShowBox").onmouseover = function(){
+		hasOverMenuShowBox = true;
+	};
+	$("menuShow").onmouseover = function(){
+		hasOverMenuShow = true;
+	};
+
+	$("menuTop").onmouseout = function(){
+		hasOverMenuTop = false;
+	};
+	$("menuHome").onmouseout = function(){
+		hasOverMenuHome = false;
+	};
+	$("menuHomeBottom").onmouseout = function(){
+		hasOverMenuHomeBottom = false;
+	};
+	$("menuShowBox").onmouseout = function(){
+		hasOverMenuShowBox = false;
+	};
+	$("menuShow").onmouseout = function(){
+		hasOverMenuShow = false;
+	};
+
+	window.onload = function(){
+		eventBind();
 	};
 })()

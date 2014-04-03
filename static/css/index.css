@@ -139,7 +139,54 @@ body{
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-image: url(../img/home.png);
+	cursor: pointer;
 }
+#menuHomeBottom{
+	display: inline-block;
+	width: 0px;
+	height: 19px;
+	position: absolute;
+	top: 31px;
+	left: 0px;
+	background-color: #c9c9c9;
+}
+
+#menuShowBox{
+	display: inline-block;
+	height: 50px;
+	width: 0px;
+	position: absolute;
+	top: 0px;
+	left: 30px;
+	overflow: hidden;
+}
+#menuShow{
+	position: relative;
+	float: right;
+	display: inline-block;
+	width: 970px;
+	height: 100%;
+	background-color: #c9c9c9;
+	text-align: left;
+}
+#menuShowUnderline{
+	display: inline-block;
+	width: 0px;
+	height: 3px;
+	background-color: #fff;
+
+	position: absolute;
+	top: 32px;
+	left: -100%;
+}
+#menuShow>a{
+	display: inline-block;
+	font-size: 15px;
+	line-height: 36px;
+	color: #fff;
+	margin: 0px 14px;
+}
+
 
 /*******content******/
 
