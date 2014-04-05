@@ -14,22 +14,20 @@
 	    return document.getElementById(id);
 	};
 
-	function getCss(obj){
-	    return window.getComputedStyle(obj,false);
-	};
-
 	function hoverShow(obj,T){
 		var moveTime;
+		var hasObjOver = true;
+		var hasObjParentOver = false;
 		move();
 		function move(){
 			clearInterval(moveTime);
-			const EACH_MOVE1 = 100.0/T;
-			var topNow = parseFloat(getCss(obj).top)/parseFloat(getCss(obj).height)*100;
+			var EACH_MOVE1 = 100.0/T;
+			var topNow = parseFloat(_(obj).getCss("top"))/parseFloat(_(obj).getCss("height"))*100;
 			var countTime = 1;
 			obj.parentNode.onmouseover = function(){};
 			moveTime = setInterval(function(){  
 			    obj.style.top = (topNow + EACH_MOVE1*countTime) + "%"
-			    if(parseFloat(getCss(obj).top) < 0){
+			    if(parseFloat(_(obj).getCss("top")) < 0){
 			        ++countTime;
 			    }
 			    else{
@@ -45,14 +43,14 @@
 					move()
 				};
 
-				var objHeight    = parseFloat(getCss(obj).height);
-				var topNow       = parseFloat(getCss(obj).top)/objHeight*100;
+				var objHeight    = parseFloat(_(obj).getCss("height"));
+				var topNow       = parseFloat(_(obj).getCss("top"))/objHeight*100;
 				var countTime    = 1;
-				const EACH_MOVE2 = 100.0/T;
+				var EACH_MOVE2 = 100.0/T;
 
 				moveTime = setInterval(function(){  
 				    obj.style.top = (topNow - EACH_MOVE2*countTime) + "%";
-				    if((0 - parseFloat(getCss(obj).top)) < objHeight){
+				    if((0 - parseFloat(_(obj).getCss("top"))) < objHeight){
 				        ++countTime;
 				    }
 				    else{
@@ -81,13 +79,13 @@
 			var obj1      = $("menuHomeBottom");
 			var obj2      = $("menuShow");
 			var obj3      = $("menuShowBox");
-			var objWidth1 = parseFloat(getCss(obj1).width);
-			var objWidth2 = parseFloat(getCss(obj2).width);
-			var objWidth3  = parseFloat(getCss(obj3).width);
+			var objWidth1 = parseFloat(_(obj1).getCss("width"));
+			var objWidth2 = parseFloat(_(obj2).getCss("width"));
+			var objWidth3  = parseFloat(_(obj3).getCss("width"));
 			var countTime = 1;
 			var extendLength;
-			const T = 30.0;
-			const EACH_MOVE  = objWidth2/T;
+			var T = 30.0;
+			var EACH_MOVE  = objWidth2/T;
 
 			var moveTime1 = setInterval(function(){  
 			    if(!hasMenuShow()){
@@ -127,8 +125,8 @@
 
 	function underlineMove(obj){
 		if(canUnderlineMove){
-			const OBJ_MARGIN = 10;
-			var objWidth = parseFloat(getCss(obj).width);
+			var OBJ_MARGIN = 10;
+			var objWidth = parseFloat(_(obj).getCss("width"));
 			var objRight = 970 - obj.offsetLeft - objWidth - OBJ_MARGIN;
 			console.log(objRight)
 			$("menuShowUnderline").style.width = (objWidth + OBJ_MARGIN*2) + "px";
@@ -143,10 +141,10 @@
 			move();
 		},10000);
 		function move(){
-			const T = 15;
-			var eachMove = 100.0/T;
+			var T = 15;
+			var eachMove = 100.0/T;_(shopObj[shopShowNum]).getCss("width")
 			var countTime = 1;
-			var objWidth = parseFloat(getCss(shopObj[shopShowNum]).width);
+			var objWidth = parseFloat(_(shopObj[shopShowNum]).getCss("width"));
 			HDRightMoveTime = setInterval(function(){
 				if(eachMove > 0){
 					var changeWidth = objWidth - countTime*eachMove;
@@ -263,13 +261,13 @@
 				var obj1 = $("menuHomeBottom");
 				var obj2 = $("menuShow");
 				var obj3 = $("menuShowBox");
-				var objWidth1 = parseFloat(getCss(obj1).width);
-				var objWidth2 = parseFloat(getCss(obj2).width);
-				var objWidth3 = parseFloat(getCss(obj3).width);
+				var objWidth1 = parseFloat(_(obj1).getCss("width"));
+				var objWidth2 = parseFloat(_(obj2).getCss("width"));
+				var objWidth3 = parseFloat(_(obj3).getCss("width"));
 				var countTime    = 1;
 				var extendLength;
-				const T = 30.0;
-				const EACH_MOVE  = objWidth2/T;
+				var T = 30.0;
+				var EACH_MOVE  = objWidth2/T;
 
 				var moveTime1 = setInterval(function(){  
 				    var extendLength = (objWidth3 - EACH_MOVE*countTime);
