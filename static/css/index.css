@@ -71,45 +71,55 @@ body{
 }
 
 #hdRight{
-	position: absolute;
-	top:10px;
-	right: 16px;
+	float: right;
+	position: relative;
+	margin:10px 16px 0px 0px ;
 
 	display: inline-block;
 	width: 120px;
-	height: 120px;
-	z-index: 12;
+	height: 100px;
+	z-index: 11;
 }
 
-#hdRight>div{
+#hdRight>img{
 	position: absolute;
 	top: 0px;
-	left: 0px;
-	right: 0px;
-	margin:0px auto;
+	margin:0px;
 
 	display: inline-block;
 	height: 120px;
-
+	outline: 0px;
+	border: 0px;
+	z-index: 12;
+/*
 	-webkit-background-size: 100% 100%;
 	background-size: 100% 100%;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat;*/
 }
-#hdRight a{
+#hdRightLinkBox{
+	position: absolute;
+	top: 10px;
+	right: 16px;
 	display: inline-block;
-	width: 100%;
+	width: 120px;
 	height: 100px;
+	z-index: 200;
+}
+
+#hdRightLink{
+	display: inline-block;
+	width: 120px;
+	height: 100px;
+	z-index: 200;
 }
 
 #hdRightShop1{
-	z-index: 13;
-	width: 50%;
-	background-image: url(../img/shop1.png);
+	width: 120px;
+	left: 0px;
 }
 #hdRightShop2{
-	z-index: 13;
 	width: 0;
-	background-image: url(../img/shop2.png);
+	left: 60px;
 }	
 
 /*****menu******/
@@ -212,6 +222,7 @@ body{
 	height: 325px;
 
 	position: relative;
+	z-index: 1;
 }
 
 #ctRow1>a{
@@ -581,10 +592,12 @@ body{
 	width: 100%;
 	height: 100%;
 	top: 0;
+	left: 0px;
 	background-repeat: repeat;
+	z-index: 10;
 }
 #artCenterHover{
-	position: relative;
+	position: absolute;
 	-webkit-background-size: 11px 11px;
 	background-size: 11px 11px;
 	
@@ -592,7 +605,7 @@ body{
 }
 
 #creativeStudioHover{
-	position: relative;
+	position: absolute;
 	display: inline-block;
 	width: 100%;
 	height: 100%;
@@ -603,8 +616,9 @@ body{
 }
 
 #loginHover{
-	position: relative;
+	position: absolute;
 	top: -100%;
+	left: 0px;
 	display: inline-block;
 	width: 100%;
 	height: 100%;
@@ -622,8 +636,9 @@ body{
 }
 
 #doubanHover{
-	position: relative;
+	position: absolute;
 	top: -100%;
+	left: 0px;
 	display: inline-block;
 	width: 100%;
 	height: 100%;
@@ -633,8 +648,9 @@ body{
 }
 
 #weiboHover{
-	position: relative;
+	position: absolute;
 	top: -100%;
+	left: 0px;
 	display: inline-block;
 	width: 100%;
 	height: 100%;
@@ -644,8 +660,9 @@ body{
 }
 
 #wechatHover{
-	position: relative;
+	position: absolute;
 	top: -100%;
+	left: 0px;
 	display: inline-block;
 	width: 100%;
 	height: 100%;
@@ -655,28 +672,28 @@ body{
 }
 
 #theaterZoneHover{
-	position: relative;
+	position: absolute;
 	-webkit-background-size: 11px 11px;
 	-moz-background-size: 11px 11px;
 	background-size: 11px 11px;
 	background-image: url(../img/hover3.png);	
 }
 #artSpaceZoneHover{
-	position: relative;
+	position: absolute;
 	-webkit-background-size: 11px 11px;
 	-moz-background-size: 11px 11px;
 	background-size: 11px 11px;
 	background-image: url(../img/hover4.png);	
 }
 #cafeZoneHover{
-	position: relative;
+	position: absolute;
 	-webkit-background-size: 11px 11px;
 	-moz-background-size: 11px 11px;
 	background-size: 11px 11px;
 	background-image: url(../img/hover5.png);	
 }
 #workShopZoneHover{
-	position: relative;
+	position: absolute;
 	-webkit-background-size: 11px 11px;
 	-moz-background-size: 11px 11px;
 	background-size: 11px 11px;
@@ -742,11 +759,11 @@ body{
 
 #interactionHover{
 	background-image: url(../img/hover9.png);
-	position: relative;
+	position: absolute;
 }
 #cooperateHover{
 	background-image: url(../img/hover10.png);
-	position: relative;
+	position: absolute;
 }
 #interactionP,
 #cooperateP,
@@ -760,13 +777,14 @@ body{
 	bottom: 0px;
 	left: 0px;
 	right: 0px;
-	
+
+	margin: -23px 0 0 0\9;
 	height: 25px;
 	margin:auto;
-	margin: -23px 0 0 0\9;
 	line-height: 25px;
 	font-size: 23px;
 	color: #fff;
+	z-index: 2;
 }
 
 #artCenterHoverP{
@@ -782,6 +800,7 @@ body{
 	line-height: 25px;
 	font-size: 23px;
 	color: #fff;
+	z-index: 2;
 }
 
 #magazineHover{
@@ -829,10 +848,21 @@ body{
 
 #childrenZoneHover{
 	background-image: url(../img/hover11.png);
-	position: relative;
+	position: absolute;
 }
 
 #about403Hover{
-	position: relative;
+	position: absolute;
 	background-image: url(../img/hover7.png);
+}
+
+.eachOver{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 10;
 }
