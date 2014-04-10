@@ -113,14 +113,19 @@ body{
 	z-index: 200;
 }
 
-#hdRightShop1{
+#hdRightShop0{
 	width: 120px;
 	left: 0px;
 }
-#hdRightShop2{
+#hdRightShop1{
 	width: 0;
 	left: 60px;
-}	
+}
+#buyMap{
+	display: inline-block;
+	width: 120px;
+	height: 100px;
+}
 
 /*****menu******/
 #menu{
