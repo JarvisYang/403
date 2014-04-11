@@ -593,7 +593,7 @@ body{
 
 /********each hover**************/
 .eachHover{
-	display: inline-block;
+	display: none;
 	width: 100%;
 	height: 100%;
 	top: 0;
@@ -605,25 +605,20 @@ body{
 	position: absolute;
 	-webkit-background-size: 11px 11px;
 	background-size: 11px 11px;
-	
 	background-image: url(../img/hover1.png);
 }
 
 #creativeStudioHover{
 	position: absolute;
-	display: inline-block;
-	width: 100%;
-	height: 100%;
 	-webkit-background-size: 11px 11px;
 	background-size: 11px 11px;
-	background-repeat: repeat;
 	background-image: url(../img/hover2.png);
 }
 
 #loginHover{
 	position: absolute;
 	left: 0px;
-	display: inline-block;
+	display: none;
 	width: 100%;
 	height: 100%;
 	background-color: #e84051;
@@ -642,7 +637,7 @@ body{
 #doubanHover{
 	position: absolute;
 	left: 0px;
-	display: inline-block;
+	display: none;
 	width: 100%;
 	height: 100%;
 	-webkit-background-size: 100% 100%;
@@ -653,7 +648,7 @@ body{
 #weiboHover{
 	position: absolute;
 	left: 0px;
-	display: inline-block;
+	display: none;
 	width: 100%;
 	height: 100%;
 	-webkit-background-size: 100% 100%;
@@ -664,7 +659,7 @@ body{
 #wechatHover{
 	position: absolute;
 	left: 0px;
-	display: inline-block;
+	display: none;
 	width: 100%;
 	height: 100%;
 	-webkit-background-size: 100% 100%;
@@ -771,21 +766,17 @@ body{
 #childrenZoneHoverP,
 #about403HoverP,
 #creativeStudioHoverP{
-	text-align: center;
 	position: absolute;
-	top: 0px;
-	top: 55%\9;
-	bottom: 0px;
 	left: 0px;
 	right: 0px;
 
-	margin: -23px 0 0 0\9;
 	height: 25px;
 	margin:auto;
 	line-height: 25px;
 	font-size: 23px;
 	color: #fff;
 	z-index: 2;
+	text-align: center;
 }
 
 #artCenterHoverP{
@@ -807,7 +798,7 @@ body{
 #magazineHover{
 	position: absolute;
 	left:0px;
-	display: inline-block;
+	display: none;
 	width: 100%;
 	height: 100%;
 	background-color: #c660a1;
@@ -818,7 +809,7 @@ body{
 #phoneHover{
 	position: absolute;
 	left:0px;
-	display: inline-block;
+	display: none;
 	width: 100%;
 	height: 100%;
 	background-color: #c0a555;
@@ -838,8 +829,6 @@ body{
 }
 #phoneHoverP{
 	position: absolute;
-	top: 0px;
-	bottom: 0px;
 	left: 0px;
 	right: 0px;
 	margin: auto;
