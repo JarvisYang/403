@@ -39,7 +39,6 @@ $(function(){
 				var showBoxTime = $("#menuShowBox").width()/v;
 				$("#menuShowBox").animate({width:'0px'},showBoxTime,function(){
 					$("#menuHomeBottom").animate({width:'0px'},momeBottomTime,function(){
-						console.log("unbind")
 						unbindMenu();
 					});
 				});

@@ -20,8 +20,9 @@ $(function(){
 			};
 		};
 
-		window.onload = function(){
-			hdRightMove();
-		};
+
+
+		hdRightMove();
+
 	});
 });

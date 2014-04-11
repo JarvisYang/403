@@ -622,7 +622,6 @@ body{
 
 #loginHover{
 	position: absolute;
-	top: -100%;
 	left: 0px;
 	display: inline-block;
 	width: 100%;
@@ -642,7 +641,6 @@ body{
 
 #doubanHover{
 	position: absolute;
-	top: -100%;
 	left: 0px;
 	display: inline-block;
 	width: 100%;
@@ -654,7 +652,6 @@ body{
 
 #weiboHover{
 	position: absolute;
-	top: -100%;
 	left: 0px;
 	display: inline-block;
 	width: 100%;
@@ -666,7 +663,6 @@ body{
 
 #wechatHover{
 	position: absolute;
-	top: -100%;
 	left: 0px;
 	display: inline-block;
 	width: 100%;
@@ -810,7 +806,6 @@ body{
 
 #magazineHover{
 	position: absolute;
-	top: -100%;
 	left:0px;
 	display: inline-block;
 	width: 100%;
@@ -822,7 +817,6 @@ body{
 
 #phoneHover{
 	position: absolute;
-	top: -100%;
 	left:0px;
 	display: inline-block;
 	width: 100%;
