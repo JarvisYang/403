@@ -5,8 +5,17 @@
     <link type="text/css" rel="stylesheet" href="../static/css/reset.css" />
     <link type="text/css" rel="stylesheet" href="../static/css/common.css" />
     <link type="text/css" rel="stylesheet" href="../static/css/index.css" />
+    <!--[if IE 8]>
+   	 	<link type="text/css" rel="stylesheet" href="../static/css/indexIE8.css" />
+    <![endif]-->
+    <!--[if !IE 8]>
+   	 	<link type="text/css" rel="stylesheet" href="../static/css/indexNotIE8.css" />
+    <![endif]-->
+    <!--[if !IE]><!-->
+		<link type="text/css" rel="stylesheet" href="../static/css/indexNotIE8.css" />
+     <!--<![endif]-->
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=EDGE">
 
 </head>
 
@@ -32,24 +41,28 @@
             	<div id="menuShowUnderline"></div>
             </div>
         </div>
+
+		<!--[if IE 8]>
         <div id="content">
             <div id="ctRow1">
                 <a href="javascript:void(0)" id="artCenter">
 
                 	<div class="eachHover" id="artCenterHover">
+                		<div id="artCenterHoverBg"></div>
                 		<p id="artCenterHoverP">表演艺术</p>
                 	</div>
                 	<div id="artCenterOver" class="eachOver"></div>
                 </a>
                 <a href="javascript:void(0)" id="creativeStudio">
                 	<div class="eachHover" id="creativeStudioHover">
+                		<div id="creativeStudioHoverBg"></div> 
                 		<p id="creativeStudioHoverP">创作营</p>
                 	</div>
                 	<div id="creativeStudioOver" class="eachOver"></div>
                 </a>
                 <div id="communicate">
                     <a href="javascript:void(0)" id="login">
-                    	<div id="loginHover">
+                    	<div id="loginHover"> 
                     		<p id="loginP">登陆</p>
                     		<p id="regesterP">注册</p>
                     	</div>
@@ -99,12 +112,14 @@
                 <div id="exchangeDiv">
                     <a href="javascript:void(0)" id="interaction">
                     	<div class="eachHover" id="interactionHover">
+                    		<div id="interactionHoverBg"></div> 
                     		<p id="interactionP">互动社区</p>
                     	</div>
                     	<div id="interactionOver" class="eachOver"></div>
                     </a>
                     <a href="javascript:void(0)" id="cooperate">
                     	<div class="eachHover" id="cooperateHover">
+                    		<div id="Bg"></div> 
                     		<p id="cooperateP">合作专区</p>
                     	</div>
                     	<div id="cooperateOver" class="eachOver"></div>
@@ -112,12 +127,14 @@
                     <div id="contectDiv">
                     	<a href="javascript:void(0)" id="contectByMagazine">
                     		<div id="magazineHover">
+                    			<div id="magazineHoverBg"></div> 
                     			<p id="magazineHoverP">电子杂志订阅</p>
                     		</div>
                     		<div id="contectByMagazineOver" class="eachOver"></div>
                     	</a>
                     	<a href="javascript:void(0)" id="contectByPhone">
                     		<div id="phoneHover">
+                    			<div id="phoneHoverBg"></div> 
                     			<p id="phoneHoverP">手机版</p>
                     		</div>
                     		<div id="contectByPhoneOver" class="eachOver"></div>
@@ -126,6 +143,7 @@
                 </div>
                 <a href="javascript:void(0)" id="childrenZone">
                 	<div class="eachHover" id="childrenZoneHover">
+                		<div id="childrenZoneHoverBg"></div> 
                 		<p id="childrenZoneHoverP">儿童艺术</p>
                 	</div>
                 	<div id="childrenZoneOver" class="eachOver"></div>
@@ -135,6 +153,7 @@
         <div id="adv">
         	<a href="javascript:void(0)" id="about403">
         		<div class="eachHover" id="about403Hover">
+        			<div id="about403HoverBg"></div> 
         			<p id="about403HoverP">关于403</p>
         		</div>
         		<div id="about403Over" class="eachOver"></div>
@@ -149,6 +168,246 @@
         		</div>
         	</div>
         </div>
+		<![endif]-->
+        <!--[if !IE 8]>
+		<div id="content">
+		    <div id="ctRow1">
+		        <a href="javascript:void(0)" id="artCenter">
+
+		        	<div class="eachHover" id="artCenterHover">
+		        		<p id="artCenterHoverP">表演艺术</p>
+		        	</div>
+		        	<div id="artCenterOver" class="eachOver"></div>
+		        </a>
+		        <a href="javascript:void(0)" id="creativeStudio">
+		        	<div class="eachHover" id="creativeStudioHover">
+		        		<p id="creativeStudioHoverP">创作营</p>
+		        	</div>
+		        	<div id="creativeStudioOver" class="eachOver"></div>
+		        </a>
+		        <div id="communicate">
+		            <a href="javascript:void(0)" id="login">
+		            	<div id="loginHover">
+		            		<p id="loginP">登陆</p>
+		            		<p id="regesterP">注册</p>
+		            	</div>
+		            	<div id="loginOver" class="eachOver"></div>
+		            </a>
+		            <a href="javascript:void(0)" id="douban">
+		            	<div id="doubanHover"></div>
+		            	<div id="doubanOver" class="eachOver"></div>
+		            </a>
+		            <a href="javascript:void(0)" id="weibo">
+		            	<div id="weiboHover"></div>
+		            	<div id="weiboOver" class="eachOver"></div>
+		            </a>
+		            <a href="javascript:void(0)" id="wechat">
+		            	<div id="wechatHover"></div>
+		            	<div id="wechatOver" class="eachOver"></div>
+		            </a>
+		        </div>
+		    </div>
+		    <div id="ctRow2">
+		        <div id="mainZone">
+		            <a href="javascript:void(0)" id="theaterZone">
+		            	<div class="eachHover" id="theaterZoneHover">
+		            		<div id="theaterZoneHoverImg"></div>
+		            	</div>
+		            	<div id="theaterZoneOver" class="eachOver"></div>
+		            </a>
+		            <a href="javascript:void(0)" id="artSpaceZone">
+		            	<div class="eachHover" id="artSpaceZoneHover">
+		            		<div id="artSpaceZoneHoverImg"></div>
+		            	</div>
+		            	<div id="artSpaceZoneOver" class="eachOver"></div>
+		            </a>
+		            <a href="javascript:void(0)" id="cafeZone">
+		            	<div class="eachHover" id="cafeZoneHover">
+		            		<div id="cafeZoneHoverImg"></div>
+		            	</div>
+		            	<div id="cafeZoneOver" class="eachOver"></div>
+		            </a>
+		            <a href="javascript:void(0)" id="workShopZone">
+		            	<div class="eachHover" id="workShopZoneHover">
+		            		<div id="workShopZoneHoverImg"></div>
+		            	</div>
+		            	<div id="workShopZoneOver" class="eachOver"></div>
+		            </a>
+		        </div>
+		        <div id="exchangeDiv">
+		            <a href="javascript:void(0)" id="interaction">
+		            	<div class="eachHover" id="interactionHover">
+		            		<p id="interactionP">互动社区</p>
+		            	</div>
+		            	<div id="interactionOver" class="eachOver"></div>
+		            </a>
+		            <a href="javascript:void(0)" id="cooperate">
+		            	<div class="eachHover" id="cooperateHover">
+		            		<p id="cooperateP">合作专区</p>
+		            	</div>
+		            	<div id="cooperateOver" class="eachOver"></div>
+		            </a>
+		            <div id="contectDiv">
+		            	<a href="javascript:void(0)" id="contectByMagazine">
+		            		<div id="magazineHover">
+		            			<p id="magazineHoverP">电子杂志订阅</p>
+		            		</div>
+		            		<div id="contectByMagazineOver" class="eachOver"></div>
+		            	</a>
+		            	<a href="javascript:void(0)" id="contectByPhone">
+		            		<div id="phoneHover">
+		            			<p id="phoneHoverP">手机版</p>
+		            		</div>
+		            		<div id="contectByPhoneOver" class="eachOver"></div>
+		            	</a>
+		            </div>
+		        </div>
+		        <a href="javascript:void(0)" id="childrenZone">
+		        	<div class="eachHover" id="childrenZoneHover">
+		        		<p id="childrenZoneHoverP">儿童艺术</p>
+		        	</div>
+		        	<div id="childrenZoneOver" class="eachOver"></div>
+		        </a>
+		    </div>
+		</div>
+		<div id="adv">
+			<a href="javascript:void(0)" id="about403">
+				<div class="eachHover" id="about403Hover">
+					<p id="about403HoverP">关于403</p>
+				</div>
+				<div id="about403Over" class="eachOver"></div>
+			</a>
+			<div id="advShow">
+				<div id="toLeftDiv">
+					<a href="javascript:void(0)" id="toLeft"></a>
+				</div>
+				<div id="eachCompany"></div>
+				<div id="toRightDiv">
+					<a href="javascript:void(0)" id="toRight"></a>
+				</div>
+			</div>
+		</div>
+		<![endif]-->
+
+		<!--[if !IE]><!-->
+		<div id="content">
+		    <div id="ctRow1">
+		        <a href="javascript:void(0)" id="artCenter">
+
+		        	<div class="eachHover" id="artCenterHover">
+		        		<p id="artCenterHoverP">表演艺术</p>
+		        	</div>
+		        	<div id="artCenterOver" class="eachOver"></div>
+		        </a>
+		        <a href="javascript:void(0)" id="creativeStudio">
+		        	<div class="eachHover" id="creativeStudioHover">
+		        		<p id="creativeStudioHoverP">创作营</p>
+		        	</div>
+		        	<div id="creativeStudioOver" class="eachOver"></div>
+		        </a>
+		        <div id="communicate">
+		            <a href="javascript:void(0)" id="login">
+		            	<div id="loginHover">
+		            		<p id="loginP">登陆</p>
+		            		<p id="regesterP">注册</p>
+		            	</div>
+		            	<div id="loginOver" class="eachOver"></div>
+		            </a>
+		            <a href="javascript:void(0)" id="douban">
+		            	<div id="doubanHover"></div>
+		            	<div id="doubanOver" class="eachOver"></div>
+		            </a>
+		            <a href="javascript:void(0)" id="weibo">
+		            	<div id="weiboHover"></div>
+		            	<div id="weiboOver" class="eachOver"></div>
+		            </a>
+		            <a href="javascript:void(0)" id="wechat">
+		            	<div id="wechatHover"></div>
+		            	<div id="wechatOver" class="eachOver"></div>
+		            </a>
+		        </div>
+		    </div>
+		    <div id="ctRow2">
+		        <div id="mainZone">
+		            <a href="javascript:void(0)" id="theaterZone">
+		            	<div class="eachHover" id="theaterZoneHover">
+		            		<div id="theaterZoneHoverImg"></div>
+		            	</div>
+		            	<div id="theaterZoneOver" class="eachOver"></div>
+		            </a>
+		            <a href="javascript:void(0)" id="artSpaceZone">
+		            	<div class="eachHover" id="artSpaceZoneHover">
+		            		<div id="artSpaceZoneHoverImg"></div>
+		            	</div>
+		            	<div id="artSpaceZoneOver" class="eachOver"></div>
+		            </a>
+		            <a href="javascript:void(0)" id="cafeZone">
+		            	<div class="eachHover" id="cafeZoneHover">
+		            		<div id="cafeZoneHoverImg"></div>
+		            	</div>
+		            	<div id="cafeZoneOver" class="eachOver"></div>
+		            </a>
+		            <a href="javascript:void(0)" id="workShopZone">
+		            	<div class="eachHover" id="workShopZoneHover">
+		            		<div id="workShopZoneHoverImg"></div>
+		            	</div>
+		            	<div id="workShopZoneOver" class="eachOver"></div>
+		            </a>
+		        </div>
+		        <div id="exchangeDiv">
+		            <a href="javascript:void(0)" id="interaction">
+		            	<div class="eachHover" id="interactionHover">
+		            		<p id="interactionP">互动社区</p>
+		            	</div>
+		            	<div id="interactionOver" class="eachOver"></div>
+		            </a>
+		            <a href="javascript:void(0)" id="cooperate">
+		            	<div class="eachHover" id="cooperateHover">
+		            		<p id="cooperateP">合作专区</p>
+		            	</div>
+		            	<div id="cooperateOver" class="eachOver"></div>
+		            </a>
+		            <div id="contectDiv">
+		            	<a href="javascript:void(0)" id="contectByMagazine">
+		            		<div id="magazineHover">
+		            			<p id="magazineHoverP">电子杂志订阅</p>
+		            		</div>
+		            		<div id="contectByMagazineOver" class="eachOver"></div>
+		            	</a>
+		            	<a href="javascript:void(0)" id="contectByPhone">
+		            		<div id="phoneHover">
+		            			<p id="phoneHoverP">手机版</p>
+		            		</div>
+		            		<div id="contectByPhoneOver" class="eachOver"></div>
+		            	</a>
+		            </div>
+		        </div>
+		        <a href="javascript:void(0)" id="childrenZone">
+		        	<div class="eachHover" id="childrenZoneHover">
+		        		<p id="childrenZoneHoverP">儿童艺术</p>
+		        	</div>
+		        	<div id="childrenZoneOver" class="eachOver"></div>
+		        </a>
+		    </div>
+		</div>
+		<div id="adv">
+			<a href="javascript:void(0)" id="about403">
+				<div class="eachHover" id="about403Hover">
+					<p id="about403HoverP">关于403</p>
+				</div>
+				<div id="about403Over" class="eachOver"></div>
+			</a>
+			<div id="advShow">
+				<div id="toLeftDiv">
+					<a href="javascript:void(0)" id="toLeft"></a>
+				</div>
+				<div id="eachCompany"></div>
+				<div id="toRightDiv">
+					<a href="javascript:void(0)" id="toRight"></a>
+				</div>
+			</div>
+		</div>
+		<!--<![endif]-->
     </div>
     <div id="header">
         <div id="hdLeft"></div>
@@ -185,7 +444,15 @@
     <script type="text/javascript" rel="script" src="../static/js/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" rel="script" src="../static/js/setCss.js"></script>
     <script type="text/javascript" rel="script" src="../static/js/indexMenu.js"></script>
-    <script type="text/javascript" rel="script" src="../static/js/indexHover.js"></script>
+    <!--[if gte IE 9]>
+   	 	<script type="text/javascript" rel="script" src="../static/js/indexHoverIE9+.js"></script>
+    <![endif]-->
+    <!--[if IE 8]>
+   	 	<script type="text/javascript" rel="script" src="../static/js/indexHoverIE8.js"></script>
+    <![endif]-->
+    <!--[if !IE]><!-->
+		<script type="text/javascript" rel="script" src="../static/js/indexHover.js"></script>
+     <!--<![endif]-->
     <script type="text/javascript" rel="script" src="../static/js/indexBuy.js"></script>
     <script type="text/javascript" rel="script" src="../static/js/onload.js"></script>
 </body>

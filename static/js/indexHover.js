@@ -3,31 +3,23 @@ $(function(){
 		(function(){
 			function hoverShow(elementName){
 				$("#" + elementName).mouseover(function(){
+					console.log(hoverObj)
 					var hoverObj = $("#" + elementName).parent().children().eq(0);
 					if(hoverObj.is(":animated")) {
 						hoverObj.stop(false,true);
 					};
-					if(!-[1,]){//for IE
-						hoverObj.fadeTo(600,0.7);
-					}
-					else{
-						hoverObj.fadeIn(400);
-					};
+					hoverObj.fadeIn(400);
 				});
 			};
 
 			function hoverHide(elementName){
 				$("#" + elementName).mouseout(function(){
+					console.log(hoverObj)
 					var hoverObj = $("#" + elementName).parent().children().eq(0);
 					if(hoverObj.is(":animated")) {
 						hoverObj.stop(false,true);
 					};
-					if(!-[1,]){//for IE
-						hoverObj.fadeOut(600);
-					}
-					else{
-						hoverObj.fadeOut(400);
-					};
+					hoverObj.fadeOut(400);
 				});
 			};
 			window.elementBind = function(){
