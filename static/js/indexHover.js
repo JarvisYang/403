@@ -3,7 +3,6 @@ $(function(){
 		(function(){
 			function hoverShow(elementName){
 				$("#" + elementName).mouseover(function(){
-					console.log(hoverObj)
 					var hoverObj = $("#" + elementName).parent().children().eq(0);
 					if(hoverObj.is(":animated")) {
 						hoverObj.stop(false,true);
@@ -14,7 +13,6 @@ $(function(){
 
 			function hoverHide(elementName){
 				$("#" + elementName).mouseout(function(){
-					console.log(hoverObj)
 					var hoverObj = $("#" + elementName).parent().children().eq(0);
 					if(hoverObj.is(":animated")) {
 						hoverObj.stop(false,true);

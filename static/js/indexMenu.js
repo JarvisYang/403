@@ -85,6 +85,32 @@ $(function(){
 					||hasOverMenuShow;
 			};
 
+			function underlineMove(obj){
+				//if(canUnderlineMove){
+				obj.mouseover(function(){
+					var OBJ_MARGIN = 32;
+					var ADD_UNDERLINE_WIDTH = 10;
+					var objWidth = obj.width();
+					var objLeft = obj.position().left;
+					var objRight = 970 - objLeft - objWidth - OBJ_MARGIN - ADD_UNDERLINE_WIDTH;
+					$("#menuShowUnderline").width(objWidth + 2*ADD_UNDERLINE_WIDTH);
+					if($("#menuShowUnderline").is(":animated")) {
+						$("#menuShowUnderline").stop();
+					};
+					setTimeout(function(){
+						$("#menuShowUnderline").animate({right:objRight},100);
+					},50);
+					//$("#menuShowUnderline").css("right",objRight);
+				});
+				//};
+			};
+
+			window.bindunderlineMove = function(){
+				$("#menuShow").children().each(function(){
+					underlineMove($(this));
+				});
+			};
+
 			$("#menuHome").mouseover(function(){
 				hasOverMenuHome = true;
 				menuShow();

@@ -43,7 +43,7 @@ $(function(){
 
 				function hoverHide(){
 					if(hoverObj.is(":animated")) {
-						hoverObj.stop(false,true);
+						hoverObj.stop(false,false);
 					};
 					if(!-[1,]){//for IE8
 						hoverObj.fadeOut(600);
