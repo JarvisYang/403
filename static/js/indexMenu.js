@@ -7,6 +7,8 @@ $(function(){
 			var hasOverMenuHomeBottom = false;
 			var hasOverMenuShowBox = false;
 			var hasOverMenuShow = false;
+			var hasUnderLineMove = false;
+			var underlineMovetime = null;
 
 			function menuShow(){
 				if($("#menuShowBox").is(":animated")) {
@@ -39,6 +41,8 @@ $(function(){
 					var showBoxTime = $("#menuShowBox").width()/v;
 					$("#menuShowBox").animate({width:'0px'},showBoxTime,function(){
 						$("#menuHomeBottom").animate({width:'0px'},momeBottomTime,function(){
+							$("#menuShowUnderline").width(0);
+							$("#menuShowUnderline").css("right","970px");
 							unbindMenu();
 						});
 					});
@@ -88,18 +92,41 @@ $(function(){
 			function underlineMove(obj){
 				//if(canUnderlineMove){
 				obj.mouseover(function(){
-					var OBJ_MARGIN = 32;
+					if(hasUnderLineMove){
+						clearInterval(underlineMovetime);
+					};
+					hasUnderLineMove = true;
+					var OBJ_MARGIN = 34;
 					var ADD_UNDERLINE_WIDTH = 10;
 					var objWidth = obj.width();
 					var objLeft = obj.position().left;
-					var objRight = 970 - objLeft - objWidth - OBJ_MARGIN - ADD_UNDERLINE_WIDTH;
-					$("#menuShowUnderline").width(objWidth + 2*ADD_UNDERLINE_WIDTH);
-					if($("#menuShowUnderline").is(":animated")) {
-						$("#menuShowUnderline").stop();
-					};
-					setTimeout(function(){
-						$("#menuShowUnderline").animate({right:objRight},100);
-					},50);
+					var ULWidthNow = $("#menuShowUnderline").width();
+					var ULRightNow = 970 - $("#menuShowUnderline").position().left - ULWidthNow;
+					var ULRight = 970 - objLeft - objWidth - OBJ_MARGIN - ADD_UNDERLINE_WIDTH;
+					var ULWidth = objWidth + 2*ADD_UNDERLINE_WIDTH;
+					var T = 30.0;
+					var eachWidth = (ULWidth - ULWidthNow)/T;
+					var eachRight = (ULRight - ULRightNow)/T;
+					var countTime = 1;
+					underlineMovetime = setInterval(function(){
+						if(countTime < T){
+							$("#menuShowUnderline").width(ULWidthNow + eachWidth*countTime);
+							$("#menuShowUnderline").css("right",ULRightNow + eachRight*countTime);
+							countTime++;
+						}
+						else{
+							hasUnderLineMove = false;
+							$("#menuShowUnderline").css({"width":ULWidth + "px",
+														"right":ULRight + "px"});
+							clearInterval(underlineMovetime);
+						}
+					},5);
+					/*
+						if($("#menuShowUnderline").is(":animated")) {
+							$("#menuShowUnderline").stop(true,false);
+						};
+						$("#menuShowUnderline").animate({right:ULRight,
+														width:ULWidth},300);*/
 					//$("#menuShowUnderline").css("right",objRight);
 				});
 				//};

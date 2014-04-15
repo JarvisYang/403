@@ -202,15 +202,17 @@ body{
 	background-color: #fff;
 
 	position: absolute;
-	top: 32px;
+	top: 35px;
 	right: 970px;
 }
 #menuShow>a{
 	display: inline-block;
-	font-size: 15px;
+	font-size: 14px;
 	line-height: 36px;
+	font-weight: 700;
 	color: #fff;
-	margin: 0px 32px;
+	margin: 0px;
+	padding: 4px 34px 14px;
 }
 
 
