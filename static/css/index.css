@@ -504,6 +504,24 @@ body{
 	background-image: url(../img/toRight.png);
 }
 
+#companyShowBox{
+	display: inline-block;
+	width: 780px;
+	height: 113px;
+	padding:7px;
+	overflow: hidden;
+	text-align: left;
+}
+#companyShow{
+	display: inline-block;
+	height: 100%;
+}
+.eachCompany{
+	display: none;
+	margin: 0px 12px;
+	vertical-align: text-top;
+}
+
 #footer>div{
 	display: inline-block;
 	width: 100%;
@@ -637,8 +655,8 @@ body{
 
 #footerDownCopyRight{
 	text-align: center;
-	line-height: 8px;
-	font-size: 8px;
+	line-height: 12px;
+	font-size: 12px;
 	color: #797979;
 	margin: 0px;
 }
