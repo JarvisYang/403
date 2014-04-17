@@ -9,25 +9,25 @@ $(function(){
 			var turnAroundLeft = 0;
 			var companyList = new Array(
 					{
-						url:"../static/img/adv1.jpg"
+						url:"../static/img/com1.jpg"
 					},
 					{
-						url:"../static/img/adv2.jpg"
+						url:"../static/img/com2.jpg"
 					},
 					{
-						url:"../static/img/adv3.jpg"
+						url:"../static/img/com3.jpg"
 					},
 					{
-						url:"../static/img/adv4.jpg"
+						url:"../static/img/com4.jpg"
 					},
 					{
-						url:"../static/img/adv5.jpg"
+						url:"../static/img/com5.jpg"
 					},
 					{
-						url:"../static/img/adv6.jpg"
+						url:"../static/img/com6.jpg"
 					},
 					{
-						url:"../static/img/adv7.png"
+						url:"../static/img/com7.png"
 					}
 				);
 
