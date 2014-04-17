@@ -62,8 +62,8 @@ $(function(){
 									};
 								}
 							};
-
 							$("#companyShow").append(newNode);
+							console.log($("#companyShow").children().length)
 						});
 					};
 				};

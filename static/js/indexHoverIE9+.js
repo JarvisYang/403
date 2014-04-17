@@ -10,7 +10,7 @@ $(function(){
 					case 3:
 						$("#" + arguments[2]).mouseover(function(){
 							if(hoverObj.is(":animated")) {
-								hoverObj.stop(false,false);
+								hoverObj.stop(false,true);
 							};
 							if(!-[1,]){//for IE8
 								hoverObj.fadeTo(600,0.7);
@@ -22,7 +22,7 @@ $(function(){
 					case 2:
 						$("#" + arguments[1]).mouseover(function(){
 							if(hoverObj.is(":animated")) {
-								hoverObj.stop(false,false);
+								hoverObj.stop(false,true);
 							};
 							if(!-[1,]){//for IE8
 								hoverObj.fadeTo(600,0.7);
