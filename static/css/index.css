@@ -508,17 +508,22 @@ body{
 	display: inline-block;
 	width: 780px;
 	height: 113px;
-	padding:7px;
+	margin:7px;
 	overflow: hidden;
 	text-align: left;
+	position: relative;
 }
 #companyShow{
 	display: inline-block;
 	height: 100%;
+
+	position: absolute;
+	top: 0px;
+	left: 0px;
 }
 .eachCompany{
 	display: none;
-	margin: 0px 12px;
+	margin: 26px 12px 0px;
 	vertical-align: text-top;
 }
 
