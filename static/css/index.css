@@ -525,6 +525,7 @@ body{
 	display: none;
 	margin: 26px 12px 0px;
 	vertical-align: text-top;
+	height: 60px;
 }
 
 #footer>div{
