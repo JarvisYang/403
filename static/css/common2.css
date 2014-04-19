@@ -1,3 +1,9 @@
+#main{
+	border-bottom: 7px solid #d3d3d3;
+}
+#footer{
+	border-top: 1px solid #969696;
+}
 /*********menu******/
 #menuHomeBottom{
 	width: 30px;
@@ -7,7 +13,65 @@
 	width: 970px;
 }
 
-#menuShowUnderline{
-	width: 76px;
-	right: 746px;
+/*******navigate************/
+#navigate{
+	display: inline-block;
+	width: 100%;
+	height: 42px;
+	
+	margin-top: 50px;
+	border-top: 1px solid #b4b4b4;
+	text-align: left;
+	background-repeat: repeat;
+	background-image: url(../img/footerBg2.jpg);
+}
+
+#webPosition{
+	display: inline-block;
+	width: auto;
+	height: 100%;
+	margin: 0px 0px 0px 15px;
+}
+
+#webPosition>a{
+	line-height: 42px;
+	vertical-align:text-top;
+}
+
+.posOrigin{
+	font-size: 13px;
+	color: #615f60;
+	margin:0px 16px;
+}
+
+.posTo{
+	color: #7C7C7C;
+	font-size: 19px;
+}
+
+#actKindChoice{
+	display: inline-block;
+	width: 181px;
+	height: 25px;
+
+	float:right;
+	margin:10px 140px 0px 0px;
+}
+#actKindChoice>a{
+	display: inline-block;
+	width: 90px;
+	height: 100%;
+	line-height: 25px;
+	text-align: center;
+	
+	background-color: #898989;
+	color: #DBDBDB;
+	font-size: 14px;
+}
+
+#lastAct{
+	float: left;
+}
+#overAct{
+	float: right;
 }

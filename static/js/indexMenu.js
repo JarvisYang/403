@@ -55,19 +55,19 @@ $(function(){
 					menuShow();
 				});
 				$("#menuTop").bind("mouseover",function(){
-					hasOverMenu = true;
+					hasOverMenuTop = true;
 					menuShow();
 				});
 				$("#menuHomeBottom").bind("mouseover",function(){
-					hasOverMenu = true;
+					hasOverMenuHomeBottom = true;
 					menuShow();
 				});
 				$("#menuShowBox").bind("mouseover",function(){
-					hasOverMenu = true;
+					hasOverMenuShowBox = true;
 					menuShow();
 				});
 				$("#menuShow").bind("mouseover",function(){
-					hasOverMenu = true;
+					hasOverMenuShow = true;
 					menuShow();
 				});
 			};
@@ -90,7 +90,6 @@ $(function(){
 			};
 
 			function underlineMove(obj){
-				//if(canUnderlineMove){
 				obj.mouseover(function(){
 					if(hasUnderLineMove){
 						clearInterval(underlineMovetime);
@@ -121,15 +120,7 @@ $(function(){
 							clearInterval(underlineMovetime);
 						}
 					},5);
-					/*
-						if($("#menuShowUnderline").is(":animated")) {
-							$("#menuShowUnderline").stop(true,false);
-						};
-						$("#menuShowUnderline").animate({right:ULRight,
-														width:ULWidth},300);*/
-					//$("#menuShowUnderline").css("right",objRight);
 				});
-				//};
 			};
 
 			window.bindunderlineMove = function(){
@@ -164,7 +155,7 @@ $(function(){
 				menuHide()
 			});
 			$("#menuShow").mouseout(function(){
-				hasOverMenuShowBox = false;
+				hasOverMenuShow = false;
 				menuHide()
 			});
 		})();

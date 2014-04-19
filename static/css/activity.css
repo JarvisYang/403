@@ -1,0 +1,25 @@
+/*******content************/
+#content{
+	display: inline-block;
+	width: 940px;
+	height: 1092px;
+	margin-top: 20px;
+}
+
+/**********category******/
+#categoryBox{
+	display: inline-block;
+	width: 100%;
+	height: 12px;
+
+	margin: 15px 0px 14px 0px;
+
+	text-align: left;
+}
+
+#categoryBox>a{
+	line-height: 13px;
+	font-size: 13px;
+	margin-right: 32px;
+	color: #818181;
+}

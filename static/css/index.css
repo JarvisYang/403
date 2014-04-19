@@ -3,10 +3,9 @@ html{
 }
 
 #main{
-	height: 717px;
+	height: 720px;
 
 	position: relative;
-	border-bottom: solid #c9c9c9 6px;
 }
 
 #footer{
