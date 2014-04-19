@@ -1,212 +1,32 @@
 html{
 	height: 1052px;
-	background-color: #fff;
-	text-align: center;
-}
-
-body{
-	position: relative;
-	display: inline-block;
-	width: 1000px;
-	height: 100%;
-	margin:0px auto;
-}
-
-#header{
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	display: inline-block;
-	width: 100%;
-	height: 110px;
 }
 
 #main{
-	display: inline-block;
-	width: 100%;
 	height: 717px;
 
 	position: relative;
-	top: 110px;
-
 	border-bottom: solid #c9c9c9 6px;
 }
 
 #footer{
-	position: absolute;
 	top: 827px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	
-	display: inline-block;
-	width: 100%;
-	height: auto;
-	height: 186px\9;
-	text-align: center;
 }
 
-#hdLeft{
-	position: absolute;
-	top: 0px;
-	bottom: 0px;
-	left: 22px;
-	margin:auto 0px;
-	margin:15px 0px \9;
-
-	display: inline-block;
-	width: 238px;
-	height: 80px;
-	background-image: url(../img/403Logo1.jpg);
-	-webkit-background-size: 100% 100%;
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-}
-
-#hdRight{
-	float: right;
-	position: relative;
-	margin:10px 16px 0px 0px ;
-
-	display: inline-block;
-	width: 120px;
-	height: 100px;
-	z-index: 11;
-}
-
-#hdRight>img{
-	position: absolute;
-	top: 0px;
-	margin:0px;
-
-	display: inline-block;
-	height: 120px;
-	outline: 0px;
-	border: 0px;
-	z-index: 12;
-/*
-	-webkit-background-size: 100% 100%;
-	background-size: 100% 100%;
-	background-repeat: no-repeat;*/
-}
-#hdRightLinkBox{
-	position: absolute;
-	top: 10px;
-	right: 16px;
-	display: inline-block;
-	width: 120px;
-	height: 100px;
-	z-index: 200;
-}
-
-#hdRightLink{
-	display: inline-block;
-	width: 120px;
-	height: 100px;
-	z-index: 200;
-}
-
-#hdRightShop0{
-	width: 120px;
-	left: 0px;
-}
-#hdRightShop1{
-	width: 0;
-	left: 60px;
-}
-#buyMap{
-	display: inline-block;
-	width: 120px;
-	height: 100px;
-}
-
-/*****menu******/
-#menu{
-	display: inline-block;
-	width: 100%;
-	height: 9px;
-
-	position: absolute;
-	top: 0px;
-	left: 0px;
-
-	z-index: 11;
-}
-
-#menuTop{
-	display: inline-block;
-	height:9px; 
-	width: auto;
-	background-color: #898989;
-	
-	position: absolute;
-	top:0px;
-	left: 50px;
-	right: 0px;
-}
-
-#menuHome{
-	display: inline-block;
-	width: 50px;
-	height: 31px;
-
-	position: absolute;
-	left: 0px;
-	top: 0px;
-
-	-webkit-background-size: 100% 100%;
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	background-image: url(../img/home.png);
-	cursor: pointer;
-}
+/*********menu******/
 #menuHomeBottom{
-	display: inline-block;
 	width: 0px;
-	height: 19px;
-	position: absolute;
-	top: 31px;
-	left: 0px;
-	background-color: #898989;
 }
 
 #menuShowBox{
-	display: inline-block;
-	height: 50px;
 	width: 0px;
-	position: absolute;
-	top: 0px;
-	left: 30px;
-	overflow: hidden;
 }
-#menuShow{
-	position: relative;
-	float: right;
-	display: inline-block;
-	width: 970px;
-	height: 100%;
-	background-color: #898989;
-	text-align: left;
-}
-#menuShowUnderline{
-	display: inline-block;
-	width: 0px;
-	height: 3px;
-	background-color: #fff;
 
-	position: absolute;
-	top: 35px;
+#menuShowUnderline{
+	width: 0px;
 	right: 970px;
 }
-#menuShow>a{
-	display: inline-block;
-	font-size: 14px;
-	line-height: 36px;
-	font-weight: 700;
-	color: #fff;
-	margin: 0px;
-	padding: 4px 34px 14px;
-}
+
 
 
 /*******content******/
@@ -526,145 +346,6 @@ body{
 	margin: 26px 12px 0px;
 	vertical-align: text-top;
 	height: 60px;
-}
-
-#footer>div{
-	display: inline-block;
-	width: 100%;
-	background-repeat: repeat;
-}
-
-#footerUp{
-	height: 141px;
-	background-image: url(../img/footerBg1.jpg);
-}
-
-#footerDown{
-	height: 84px;
-	border-top: 1px solid #b4b4b4;
-	background-image: url(../img/footerBg2.jpg);
-
-	text-align: center;
-}
-
-#footerUpMain{
-	display: inline-block;
-	width: 315px;
-	height: 85px;
-
-	margin:34px auto 0px;
-	text-align: left;
-	position: relative;
-}
-
-#ftCode{
-	display: inline-block;
-	width: 85px;
-	height: 85px;
-}
-
-#ftAbout403{
-	display: inline-block;
-	width: 216px;
-	height: 100%;
-	position: absolute;
-	top: 0px;
-	right: 0px;
-}
-#ftContectNum{
-	width: 194px;
-	height: 39px;
-
-	position: absolute;
-	bottom: 4px;
-}
-#ftContectZite{
-	display: inline-block;
-	width: 100%;
-	height: 40px;
-
-	position: absolute;
-	right: 0px;
-	top: 0px;
-}
-
-#ftContectZite>p{
-	margin:0px;
-	font-size: 11px;
-	line-height: 13px;
-	color:#5f5d5d;
-}
-
-#footerDownMain{
-	display: inline-block;
-	width: auto;
-	height: 51px;
-	padding-left: 24px;
-	margin: 9px auto 0px;
-	text-align: center;
-}
-
-.ftDownLink{
-	display: inline-block;
-	width: 74px;
-	height: 50px;
-
-	position: relative;
-}
-
-.ftDownLinkIcon{
-	display: inline-block;
-	width: 74px;
-	height: 23px;
-	text-align: center;
-	background-position: center center;
-	background-repeat: no-repeat;
-}
-
-.ftDownLinkP{
-	display: inline-block;
-	width: 71px;
-	height: 16px;
-
-	position: absolute;
-	left: 0px;
-	bottom: 3px;
-
-	text-align: center;
-	font-size: 14px;
-	line-height: 16px;
-	color: #5d5d5d;
-	margin: 0px auto;
-	border-left: 3px solid #8e8e8e;
-}
-
-#ftCooperate>.ftDownLinkP{
-	width: 74px!important;
-	border-left: 0px !important;
-}
-
-#ftCooperate>.ftDownLinkIcon{
-	background-image: url(../img/footericon1.png);
-}
-#ftAboutUs>.ftDownLinkIcon{
-	background-image: url(../img/footericon2.png);
-}
-#ftTerms>.ftDownLinkIcon{
-	background-image: url(../img/footericon3.png);
-}
-#ftCopyRight>.ftDownLinkIcon{
-	background-image: url(../img/footericon4.png);
-}
-#ftNavigate>.ftDownLinkIcon{
-	background-image: url(../img/footericon5.png);
-}
-
-#footerDownCopyRight{
-	text-align: center;
-	line-height: 12px;
-	font-size: 12px;
-	color: #797979;
-	margin: 0px;
 }
 
 /********each hover**************/
