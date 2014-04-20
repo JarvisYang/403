@@ -4,6 +4,7 @@
 	width: 940px;
 	height: 1092px;
 	margin-top: 20px;
+	text-align: left;
 }
 
 /**********category******/
@@ -12,7 +13,7 @@
 	width: 100%;
 	height: 12px;
 
-	margin: 15px 0px 14px 0px;
+	margin: 15px 0px 15px 0px;
 
 	text-align: left;
 }
@@ -22,4 +23,73 @@
 	font-size: 13px;
 	margin-right: 32px;
 	color: #818181;
+}
+
+/********recommend*****/
+#recommendBox{
+	display: inline-block;
+	width: 100%;
+	height: 179px;
+}
+
+#recommendActPic{
+	display: inline-block;
+	width: 697px;
+}
+
+#recommendDetailBox{
+	display: inline-block;
+	height: 100%;
+	width: 211px;
+
+	float: right;
+}
+
+#recDetailShow{
+	display: inline-block;
+	width: 100%;
+	height: 139px;
+}
+
+#recActButtonBox{
+	display: inline-block;
+	width: 100%;
+	height: 40px;
+
+	text-align: center;
+
+	background-repeat: repeat;
+	background-image: url(../img/footerBg1.jpg);
+}
+
+#recActButtonBox>a{
+	display: inline-block;
+	width: 71px;
+	height: 25px;
+	line-height: 25px;
+	font-size: 13px;
+	color:#707070;
+
+	border:1px solid #bebebe;
+	background-color: #f4f4f4;
+	margin:7px 10px;
+}
+
+#activityListBox{
+	display: inline-block;
+	width: 100% ;
+	height: 30px;
+
+	margin:36px 0px;
+
+	position: relative;
+}
+
+#activityListBox>hr{
+	height: 0px;
+	width: 100%;
+	border-top: 1px dotted #7f7f7f;
+	position: absolute;
+	top: 17px;
+	left: 0px;
 }
