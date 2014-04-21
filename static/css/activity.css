@@ -75,21 +75,107 @@
 	margin:7px 10px;
 }
 
+/*********activity_List*********/
+
 #activityListBox{
 	display: inline-block;
 	width: 100% ;
-	height: 30px;
+}
+/************activity_Title*************/
+#actListTitleBox{
+	display: inline-block;
+	height: 100%;
+	width: 100%;
 
-	margin:36px 0px;
+	background-image: url(../img/dotBG.jpg);
+	background-repeat: repeat-x;
 
-	position: relative;
+	margin:35px 0px 6px;
+	padding-right: 30px;
 }
 
-#activityListBox>hr{
-	height: 0px;
+#actListTitle{
+	display: inline-block;
+	height: 100%;
+	background-color: #fff;
+	padding-right: 15px;
+}
+
+#actListTitleKind{
+	line-height: 32px;
+	font-size: 32px;
+	color: #595757;
+}
+
+#actListTitleName{
+	line-height: 19px;
+	font-size: 15px;
+	color: #595757;
+}
+/*************activity_List_Body******/
+#activityListBody{
+	display: inline-block;
 	width: 100%;
-	border-top: 1px dotted #7f7f7f;
-	position: absolute;
-	top: 17px;
-	left: 0px;
+	height: 696px;
+}
+
+.actListEachLeft,
+.actListEachRight{
+	display: inline-block;
+	height: 297px;
+	width: 432px;
+	margin-top: 32px;
+	border-bottom: 1px solid #a0a0a0;
+}
+.actListEachLeft{
+	float: left;
+}
+.actListEachRight{
+	float: right;
+}
+.actListEachImg{
+	width: 100%;
+	height: 259px;
+}
+
+.actListEachBottom{
+	display: inline-block;
+	width: 100%;
+	height: 38px;
+	overflow: hidden;
+}
+
+.actListFunBox{
+	display: inline-block;
+	width: 120px;
+	height: 30px;
+
+	border-radius: 6px 6px 0px 0px;
+	background-color: #888686;
+	margin-top: 8px;
+	vertical-align: text-top;
+}
+.actLearnMore{
+	float: right;
+	display: inline-block;
+	height: 25px;
+	vertical-align: text-top;
+	margin: 14px 14px 0px 0px ;
+}
+.actLearnMoreP{
+	display: inline-block;
+	line-height: 25px;
+	font-size: 13px;
+	color: #a8a8a8;
+	vertical-align: text-top;
+}
+
+.actLearnMoreIcon{
+	display: inline-block;
+	width: 17px;
+	height: 25px;
+	background-image: url(../img/leranMore.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	vertical-align: text-top;
 }
