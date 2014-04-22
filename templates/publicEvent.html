@@ -4,7 +4,7 @@
 <head>
     <link type="text/css" rel="stylesheet" href="../static/css/reset.css" />
     <link type="text/css" rel="stylesheet" href="../static/css/common.css" />
-    <link type="text/css" rel="stylesheet" href="../static/css/common2.css" />
+    <link type="text/css" rel="stylesheet" href="../static/css/common2.css" /><link type="text/css" rel="stylesheet" href="../static/css/activity.css" />
     <link type="text/css" rel="stylesheet" href="../static/css/publicEvent.css" />
     <!--[if lte IE 8]>
     <![endif]-->
@@ -20,28 +20,118 @@
     <div id="main">
         <div id="menu">
             <div id="menuTop"></div>
-            <div id="menuHome"></div>
+            <a href="./index.html" id="menuHome"></a>
             <div id="menuHomeBottom"></div>
             <div id="menuShowBox">
                 <div id="menuShow">
-                    <a href="javascript:void(0)" id="index1">表演艺术</a>
+                    <a href="./performingArt.html" id="index1">表演艺术</a>
                     <a href="javascript:void(0)" id="index2">公共活动</a>
-                    <a href="javascript:void(0)" id="index3">大师班</a>
-                    <a href="javascript:void(0)" id="index4">儿童艺术</a>
-                    <a href="javascript:void(0)" id="index5">互动403</a>
+                    <a href="./masterClass.html" id="index3">大师班</a>
+                    <a href="./childrenArt.html" id="index4">儿童艺术</a>
+                    <a href="./interact403.html" id="index5">互动403</a>
                 </div>
                 <div id="menuShowUnderline"></div>
             </div>
         </div>
-         <div id="navigate">
+        <div id="navigate">
             <div id="webPosition">
-                <a href="javascript:void(0)" class="posOrigin">首页</a>
+                <a href="./index.html" class="posOrigin">首页</a>
                 <a href="javascript:void(0)" class="posTo">></a>
-                <a href="javascript:void(0)" class="posOrigin">表演艺术</a>
+                <a href="javascript:void(0)" class="posOrigin">公共活动</a>
             </div>
             <div id="actKindChoice">
                 <a href="javascript:void(0)" id="lastAct">近期活动</a>
                 <a href="javascript:void(0)" id="overAct">过往活动</a>
+            </div>
+        </div>
+        <div id="content">
+            <div id="categoryBox">
+                <a href="javascript:void(0)" id="category1">类别1</a>
+                <a href="javascript:void(0)" id="category2">类别2</a>
+                <a href="javascript:void(0)" id="category3">类别3</a>
+                <a href="javascript:void(0)" id="category4">类别4</a>
+            </div>
+            <div id="recommendBox">
+                <img src="../static/img/perArtRec.jpg"  id="recommendActPic"/>
+                <div id="recommendDetailBox">
+                    <div id="recDetailShow" style="background-image:url(../static/img/perArtRec.jpg)"></div>
+                    <div id="recActButtonBox">
+                        <a href="javascript:void(0)" id="recBookButton">在线订票</a>
+                        <a href="javascript:void(0)" id="recRelay">一键转发</a>
+                    </div>
+                </div>
+            </div>
+            <div id="activityListBox">
+                <div id="actListTitleBox">
+                    <div id="actListTitle">
+                        <span id="actListTitleKind">近期</span>
+                        <span id="actListTitleName">表演艺术</span>
+                    </div>
+                </div>
+                <div id="activityListBody">
+                    <div class="actListEachLeft">
+                        <img src="../static/img/actList1.jpg" alt="" class="actListEachImg">
+                        <div class="actListEachBottom">
+                            <div class="actListFunBox">
+                                <a href="javascript:void(0)" class="actFullScreen"></a>
+                                <a href="javascript:void(0)" class="actSave"></a>
+                                <a href="javascript:void(0)" class="actRaley"></a>
+                            </div>
+                            <a href="javascript:void(0)"  class="actLearnMore">
+                                <span class="actLearnMoreP">了解更多</span>
+                                <div class="actLearnMoreIcon"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="actListEachRight">
+                        <img src="../static/img/actList2.jpg" alt="" class="actListEachImg">
+                        <div class="actListEachBottom">
+                            <div class="actListFunBox">
+                                <a href="javascript:void(0)" class="actFullScreen"></a>
+                                <a href="javascript:void(0)" class="actSave"></a>
+                                <a href="javascript:void(0)" class="actRaley"></a>
+                            </div>
+                            <a href="javascript:void(0)"  class="actLearnMore">
+                                <span class="actLearnMoreP">了解更多</span>
+                                <div class="actLearnMoreIcon"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="actListEachLeft">
+                        <img src="../static/img/actList3.jpg" alt="" class="actListEachImg">
+                        <div class="actListEachBottom">
+                            <div class="actListFunBox">
+                                <a href="javascript:void(0)" class="actFullScreen"></a>
+                                <a href="javascript:void(0)" class="actSave"></a>
+                                <a href="javascript:void(0)" class="actRaley"></a>
+                            </div>
+                            <a href="javascript:void(0)"  class="actLearnMore">
+                                <span class="actLearnMoreP">了解更多</span>
+                                <div class="actLearnMoreIcon"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="actListEachRight">
+                        <img src="../static/img/actList4.jpg" alt="" class="actListEachImg">
+                        <div class="actListEachBottom">
+                            <div class="actListFunBox">
+                                <a href="javascript:void(0)" class="actFullScreen"></a>
+                                <a href="javascript:void(0)" class="actSave"></a>
+                                <a href="javascript:void(0)" class="actRaley"></a>
+                            </div>
+                            <a href="javascript:void(0)"  class="actLearnMore">
+                                <span class="actLearnMoreP">了解更多</span>
+                                <div class="actLearnMoreIcon"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="actPlaceBox">
+                <a href="javascript:void(0)" id="actPlaceTheater"></a>
+                <a href="javascript:void(0)" id="actPlaceArtSpace"></a>
+                <a href="javascript:void(0)" id="actPlaceCafeBar"></a>
+                <a href="javascript:void(0)" id="actPlaceWorkShop"></a>
             </div>
         </div>
     </div>
@@ -109,6 +199,7 @@
     <!--[if !IE]><!-->
      <!--<![endif]-->
     <script type="text/javascript" rel="script" src="../static/js/commonBuy.js"></script>
+    <script type="text/javascript" rel="script" src="../static/js/activity.js"></script>
     <script type="text/javascript" rel="script" src="../static/js/publicEventOnload.js"></script>
 </body>
 

@@ -9,3 +9,9 @@ html{
 #footer{
 	top:1319px;
 }
+
+/******menu's underLine******/
+#menuShowUnderline{
+	width: 76px;
+	left: 382px;
+}
