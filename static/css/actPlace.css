@@ -1,3 +1,15 @@
+html{
+	height: 1510px;
+}
+
+#main{
+	height: 1169px;
+}
+
+#footer{
+	top:1283px;
+}
+
 /*******content************/
 #content{
 	display: inline-block;
