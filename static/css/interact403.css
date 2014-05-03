@@ -169,9 +169,9 @@ body{
 	height: 112px;
 	float: left;
 	background-position: center 0;
-	-webkit-background-size: conver;
-	-moz-background-size: conver;
-	background-size: conver;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
 	background-image: url(../img/masterImg.jpg);
 	background-repeat: no-repeat;
 }
@@ -179,7 +179,7 @@ body{
 .masterListRight{
 	display: inline-block;
 	width: 140px;
-	float: right;;
+	float: right;
 }
 
 .masterName{

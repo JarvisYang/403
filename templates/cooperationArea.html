@@ -6,6 +6,8 @@
     <link type="text/css" rel="stylesheet" href="../static/css/common.css" />
     <link type="text/css" rel="stylesheet" href="../static/css/common2.css" />
     <link type="text/css" rel="stylesheet" href="../static/css/cooperationArea.css" />
+    <script type="text/javascript" rel="script" src="../static/js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" rel="script" src="../static/js/fixImgSize.js"></script>
     <!--[if lte IE 8]>
     <![endif]-->
     <!--[if  gt IE 8]>
@@ -33,15 +35,99 @@
                 <div id="menuShowUnderline"></div>
             </div>
         </div>
-         <div id="navigate">
+        <div id="navigate">
             <div id="webPosition">
                 <a href="./index.html" class="posOrigin">首页</a>
                 <a href="javascript:void(0)" class="posTo">></a>
-                <a href="javascript:void(0)" class="posOrigin">表演艺术</a>
+                <a href="javascript:void(0)" class="posOrigin">合作专区</a>
             </div>
-            <div id="actKindChoice">
-                <a href="javascript:void(0)" id="lastAct">近期活动</a>
-                <a href="javascript:void(0)" id="overAct">过往活动</a>
+        </div>
+        <div id="content">
+            <div id="briefBox">
+                <img src="../static/img/cooBriefLeft.jpg" id="briefBoxLeft"/>
+                <div id="briefBoxRight">
+                    <a href="javascript:void(0)" class="join403"><span class="join403Icon"></span>加盟403</a>
+                    <a href="javascript:void(0)" class="join403"><span class="join403Icon"></span>加盟403</a>
+                    <a href="javascript:void(0)" class="join403"><span class="join403Icon"></span>加盟403</a>
+                    <a href="javascript:void(0)" class="join403"><span class="join403Icon"></span>加盟403</a>
+                    <a href="javascript:void(0)" class="join403"><span class="join403Icon"></span>加盟403</a>
+                    <a href="javascript:void(0)" class="join403"><span class="join403Icon"></span>加盟403</a>
+                </div>
+            </div>
+            <div id="cooperationList">
+                <div id="cooListLeft">
+                    <div id="cooMediaBox">
+                        <div id="cooMediaTitleBox">
+                            <div id="cooMediaTitle">
+                                <span id="cooMediaTitleMax">合作</span>
+                                <span id="cooMediaTitleMin">媒体</span>
+                            </div>
+                        </div>
+                        <div id="cooMediaList">
+                            <a href="javascript:void(0)" class="eachMedia"><img src="../static/img/cooMedia1.jpg" alt="" class="eachMeidaImg" onload = "fixImgSize(this)"></a>
+                            <a href="javascript:void(0)" class="eachMedia"><img src="../static/img/cooMedia2.jpg" alt="" class="eachMeidaImg" onload = "fixImgSize(this)"></a>
+                            <a href="javascript:void(0)" class="eachMedia"><img src="../static/img/cooMedia3.jpg" alt="" class="eachMeidaImg" onload = "fixImgSize(this)"></a>
+                            <a href="javascript:void(0)" class="eachMedia"><img src="../static/img/cooMedia4.jpg" alt="" class="eachMeidaImg" onload = "fixImgSize(this)"></a>
+                            <a href="javascript:void(0)" class="eachMedia"><img src="../static/img/cooMedia5.jpg" alt="" class="eachMeidaImg" onload = "fixImgSize(this)"></a>
+                            <a href="javascript:void(0)" class="eachMedia"><img src="../static/img/cooMedia6.jpg" alt="" class="eachMeidaImg" onload = "fixImgSize(this)"></a>
+                            <a href="javascript:void(0)" class="eachMedia"><img src="../static/img/cooMedia7.jpg" alt="" class="eachMeidaImg" onload = "fixImgSize(this)"></a>
+                            <a href="javascript:void(0)" class="eachMedia"><img src="../static/img/cooMedia8.jpg" alt="" class="eachMeidaImg" onload = "fixImgSize(this)"></a>
+                            <a href="javascript:void(0)" class="eachMedia"><img src="../static/img/cooMedia9.jpg" alt="" class="eachMeidaImg" onload = "fixImgSize(this)"></a>
+                            <a href="javascript:void(0)" class="eachMedia"><img src="../static/img/cooMedia1.jpg" alt="" class="eachMeidaImg" onload = "fixImgSize(this)"></a>
+                            <a href="javascript:void(0)" class="eachMedia"><img src="../static/img/cooMedia2.jpg" alt="" class="eachMeidaImg" onload = "fixImgSize(this)"></a>
+                            <a href="javascript:void(0)" class="eachMedia"><img src="../static/img/cooMedia3.jpg" alt="" class="eachMeidaImg" onload = "fixImgSize(this)"></a>
+                            <a href="javascript:void(0)" class="eachMedia"><img src="../static/img/cooMedia4.jpg" alt="" class="eachMeidaImg" onload = "fixImgSize(this)"></a>
+                            <a href="javascript:void(0)" class="eachMedia"><img src="../static/img/cooMedia5.jpg" alt="" class="eachMeidaImg" onload = "fixImgSize(this)"></a>
+                            <a href="javascript:void(0)" class="eachMedia"><img src="../static/img/cooMedia6.jpg" alt="" class="eachMeidaImg" onload = "fixImgSize(this)"></a>
+                        </div>
+                    </div>
+                    <div id="cooOrgBox">
+                        <div id="cooOrgTitleBox">
+                            <div id="cooMediaTitle">
+                                <span id="cooOrgTitleMax">商务</span>
+                                <span id="cooOrgTitleMin">合作机构</span>
+                            </div>
+                        </div>
+                        <div id="cooOrgList">
+                            <a href="javascript:void(0)" class="eachOrg"><img src="../static/img/cooOrg1.jpg" alt="" class="eachOrgImg" onload = "fixImgSize(this)"></a>
+                            <a href="javascript:void(0)" class="eachOrg"><img src="../static/img/cooOrg2.jpg" alt="" class="eachOrgImg" onload = "fixImgSize(this)"></a>
+                            <a href="javascript:void(0)" class="eachOrg"><img src="../static/img/cooOrg3.jpg" alt="" class="eachOrgImg" onload = "fixImgSize(this)"></a>
+                            <a href="javascript:void(0)" class="eachOrg"><img src="../static/img/cooOrg4.jpg" alt="" class="eachOrgImg" onload = "fixImgSize(this)"></a>
+                            <a href="javascript:void(0)" class="eachOrg"><img src="../static/img/cooOrg5.jpg" alt="" class="eachOrgImg" onload = "fixImgSize(this)"></a>
+                            <a href="javascript:void(0)" class="eachOrg"><img src="../static/img/cooOrg6.jpg" alt="" class="eachOrgImg" onload = "fixImgSize(this)"></a>
+                            <a href="javascript:void(0)" class="eachOrg"><img src="../static/img/cooOrg7.jpg" alt="" class="eachOrgImg" onload = "fixImgSize(this)"></a>
+                            <a href="javascript:void(0)" class="eachOrg"><img src="../static/img/cooOrg8.jpg" alt="" class="eachOrgImg" onload = "fixImgSize(this)"></a>
+                            <a href="javascript:void(0)" class="eachOrg"><img src="../static/img/cooOrg9.jpg" alt="" class="eachOrgImg" onload = "fixImgSize(this)"></a>
+                            <a href="javascript:void(0)" class="eachOrg"><img src="../static/img/cooOrg10.jpg" alt="" class="eachOrgImg" onload = "fixImgSize(this)"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="cooListRight">
+                    <div id="weiboBoxTitle">
+                        <div id="weiboIcon"></div>
+                        <p id="weiboBoxTitleP">关注403微博</p>
+                    </div>
+                    <div id="weibo403LinkBox">
+                        <div id="weibo403LinkBoxLeft"></div>
+                        <div id="weibo403LinkBoxRight">
+                            <a href="javascript:void(0)" id="weibo403Name">403国际艺术中心</a>
+                            <a href="javascript:void(0)" id="weibo403LinkButton">关注我们</a>
+                        </div>
+                    </div>
+                    <div id="announceBox">
+                        <span>艺术中心共有600平米的展厅和VIP空间。
+                        <br/>
+                        它是一个高品质的艺术展览、艺术创作、艺术沙龙中心。
+                        <br/>
+                        定期举办国家画院大师展，青年艺术家创作会，艺术沙龙等等艺术和文化活动。</span>
+                    </div>
+                </div>
+            </div>
+            <div id="actPlaceBox">
+                <a href="./theater.html" id="actPlaceTheater"></a>
+                <a href="./artSpace.html" id="actPlaceArtSpace"></a>
+                <a href="./cafeBar.html" id="actPlaceCafeBar"></a>
+                <a href="./workShop.html" id="actPlaceWorkShop"></a>
             </div>
         </div>
     </div>
@@ -100,7 +186,6 @@
             <p id="footerDownCopyRight">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCopyright 2014-2015  403art   All Rights Reserved   鄂 ICP备****号</p>
         </div>
     </div>
-    <script type="text/javascript" rel="script" src="../static/js/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" rel="script" src="../static/js/commonMenu.js"></script>
     <!--[if gte IE 9]>
     <![endif]-->
