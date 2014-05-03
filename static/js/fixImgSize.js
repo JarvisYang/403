@@ -1,7 +1,7 @@
 $(function(){
 	$(document).ready(function(){
 		(function(){
-			
+
 			window.fixImgSize = function(imgObj){
 				var imgWidth        = imgObj.width;
 				var imgHeight       = imgObj.height;
@@ -15,7 +15,6 @@ $(function(){
 					$(imgObj).height(changeImgHeight);
 					$(imgObj).css("margin-top",(parentHeight - changeImgHeight)/2.0)
 					$(imgObj).css("display","inline-block");
-					//console.log(imgObj,"wdith")
 				}
 				else{
 					$(imgObj).height(parentHeight);
