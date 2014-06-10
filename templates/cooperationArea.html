@@ -2,12 +2,12 @@
 <html>
 
 <head>
-    <link type="text/css" rel="stylesheet" href="../static/css/reset.css" />
-    <link type="text/css" rel="stylesheet" href="../static/css/common.css" />
-    <link type="text/css" rel="stylesheet" href="../static/css/common2.css" />
-    <link type="text/css" rel="stylesheet" href="../static/css/cooperationArea.css" />
-    <script type="text/javascript" rel="script" src="../static/js/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" rel="script" src="../static/js/fixImgSize.js"></script>
+    <link type="text/css" rel="stylesheet" href="/static/css/reset.css" />
+    <link type="text/css" rel="stylesheet" href="/static/css/common.css" />
+    <link type="text/css" rel="stylesheet" href="/static/css/common2.css" />
+    <link type="text/css" rel="stylesheet" href="/static/css/cooperationArea.css" />
+    <script type="text/javascript" rel="script" src="/static/js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" rel="script" src="/static/js/fixImgSize.js"></script>
     <!--[if lte IE 8]>
     <![endif]-->
     <!--[if  gt IE 8]>
@@ -44,7 +44,7 @@
         </div>
         <div id="content">
             <div id="briefBox">
-                <img src="../static/img/cooBriefLeft.jpg" id="briefBoxLeft"/>
+                <img src="/static/img/cooBriefLeft.jpg" id="briefBoxLeft"/>
                 <div id="briefBoxRight">
                     <a href="javascript:void(0)" class="join403"><span class="join403Icon"></span>加盟403</a>
                     <a href="javascript:void(0)" class="join403"><span class="join403Icon"></span>加盟403</a>
@@ -64,21 +64,13 @@
                             </div>
                         </div>
                         <div id="cooMediaList">
-                            <a href="javascript:void(0)" class="eachMedia"><img src="../static/img/cooMedia1.jpg" alt="" class="eachMeidaImg" onload = "fixImgSize(this)"></a>
-                            <a href="javascript:void(0)" class="eachMedia"><img src="../static/img/cooMedia2.jpg" alt="" class="eachMeidaImg" onload = "fixImgSize(this)"></a>
-                            <a href="javascript:void(0)" class="eachMedia"><img src="../static/img/cooMedia3.jpg" alt="" class="eachMeidaImg" onload = "fixImgSize(this)"></a>
-                            <a href="javascript:void(0)" class="eachMedia"><img src="../static/img/cooMedia4.jpg" alt="" class="eachMeidaImg" onload = "fixImgSize(this)"></a>
-                            <a href="javascript:void(0)" class="eachMedia"><img src="../static/img/cooMedia5.jpg" alt="" class="eachMeidaImg" onload = "fixImgSize(this)"></a>
-                            <a href="javascript:void(0)" class="eachMedia"><img src="../static/img/cooMedia6.jpg" alt="" class="eachMeidaImg" onload = "fixImgSize(this)"></a>
-                            <a href="javascript:void(0)" class="eachMedia"><img src="../static/img/cooMedia7.jpg" alt="" class="eachMeidaImg" onload = "fixImgSize(this)"></a>
-                            <a href="javascript:void(0)" class="eachMedia"><img src="../static/img/cooMedia8.jpg" alt="" class="eachMeidaImg" onload = "fixImgSize(this)"></a>
-                            <a href="javascript:void(0)" class="eachMedia"><img src="../static/img/cooMedia9.jpg" alt="" class="eachMeidaImg" onload = "fixImgSize(this)"></a>
-                            <a href="javascript:void(0)" class="eachMedia"><img src="../static/img/cooMedia1.jpg" alt="" class="eachMeidaImg" onload = "fixImgSize(this)"></a>
-                            <a href="javascript:void(0)" class="eachMedia"><img src="../static/img/cooMedia2.jpg" alt="" class="eachMeidaImg" onload = "fixImgSize(this)"></a>
-                            <a href="javascript:void(0)" class="eachMedia"><img src="../static/img/cooMedia3.jpg" alt="" class="eachMeidaImg" onload = "fixImgSize(this)"></a>
-                            <a href="javascript:void(0)" class="eachMedia"><img src="../static/img/cooMedia4.jpg" alt="" class="eachMeidaImg" onload = "fixImgSize(this)"></a>
-                            <a href="javascript:void(0)" class="eachMedia"><img src="../static/img/cooMedia5.jpg" alt="" class="eachMeidaImg" onload = "fixImgSize(this)"></a>
-                            <a href="javascript:void(0)" class="eachMedia"><img src="../static/img/cooMedia6.jpg" alt="" class="eachMeidaImg" onload = "fixImgSize(this)"></a>
+                            <%
+                                medias.forEach(function(media) {
+                            %>
+                            <a href="javascript:void(0)" class="eachMedia"><img src="<%= media %>" alt="" class="eachMeidaImg" onload = "fixImgSize(this)"></a>
+                            <%
+                                });
+                            %>
                         </div>
                     </div>
                     <div id="cooOrgBox">
@@ -89,16 +81,13 @@
                             </div>
                         </div>
                         <div id="cooOrgList">
-                            <a href="javascript:void(0)" class="eachOrg"><img src="../static/img/cooOrg1.jpg" alt="" class="eachOrgImg" onload = "fixImgSize(this)"></a>
-                            <a href="javascript:void(0)" class="eachOrg"><img src="../static/img/cooOrg2.jpg" alt="" class="eachOrgImg" onload = "fixImgSize(this)"></a>
-                            <a href="javascript:void(0)" class="eachOrg"><img src="../static/img/cooOrg3.jpg" alt="" class="eachOrgImg" onload = "fixImgSize(this)"></a>
-                            <a href="javascript:void(0)" class="eachOrg"><img src="../static/img/cooOrg4.jpg" alt="" class="eachOrgImg" onload = "fixImgSize(this)"></a>
-                            <a href="javascript:void(0)" class="eachOrg"><img src="../static/img/cooOrg5.jpg" alt="" class="eachOrgImg" onload = "fixImgSize(this)"></a>
-                            <a href="javascript:void(0)" class="eachOrg"><img src="../static/img/cooOrg6.jpg" alt="" class="eachOrgImg" onload = "fixImgSize(this)"></a>
-                            <a href="javascript:void(0)" class="eachOrg"><img src="../static/img/cooOrg7.jpg" alt="" class="eachOrgImg" onload = "fixImgSize(this)"></a>
-                            <a href="javascript:void(0)" class="eachOrg"><img src="../static/img/cooOrg8.jpg" alt="" class="eachOrgImg" onload = "fixImgSize(this)"></a>
-                            <a href="javascript:void(0)" class="eachOrg"><img src="../static/img/cooOrg9.jpg" alt="" class="eachOrgImg" onload = "fixImgSize(this)"></a>
-                            <a href="javascript:void(0)" class="eachOrg"><img src="../static/img/cooOrg10.jpg" alt="" class="eachOrgImg" onload = "fixImgSize(this)"></a>
+                            <%
+                                organisations.forEach(function(organisation) {
+                            %>
+                            <a href="javascript:void(0)" class="eachOrg"><img src="<%= organisation %>" alt="" class="eachOrgImg" onload = "fixImgSize(this)"></a>
+                            <%
+                                });
+                            %>
                         </div>
                     </div>
                 </div>
@@ -135,8 +124,8 @@
     <div id="header">
         <div id="hdLeft"></div>
         <div id="hdRight">
-            <img src="../static/img/shop1.png" usemap="#buyMap" id="hdRightShop0">
-            <img src ="../static/img/shop2.png" usemap="#buyMap" id="hdRightShop1">
+            <img src="/static/img/shop1.png" usemap="#buyMap" id="hdRightShop0">
+            <img src ="/static/img/shop2.png" usemap="#buyMap" id="hdRightShop1">
             <map name="buyMap" id="buyMap">
                 <area
                 shape="circle"
@@ -149,14 +138,14 @@
     <div id="footer">
         <div id="footerUp">
             <div id="footerUpMain">
-                <img src="../static/img/code.jpg" id="ftCode">
+                <img src="/static/img/code.jpg" id="ftCode">
                 <div id="ftAbout403">
                     <div id="ftContectZite">
                         <p>湖北九歌山水文化传媒有限公司</p>
                         <p>广西新影响文化投资集团有限公司 </p>
                         <p>湖北省鄂西生态文化旅游圈投资有限公司 </p>
                     </div>
-                    <img src="../static/img/contect.png" id="ftContectNum">
+                    <img src="/static/img/contect.png" id="ftContectNum">
                 </div>
             </div>
         </div>
@@ -186,15 +175,15 @@
             <p id="footerDownCopyRight">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCopyright 2014-2015  403art   All Rights Reserved   鄂 ICP备****号</p>
         </div>
     </div>
-    <script type="text/javascript" rel="script" src="../static/js/commonMenu.js"></script>
+    <script type="text/javascript" rel="script" src="/static/js/commonMenu.js"></script>
     <!--[if gte IE 9]>
     <![endif]-->
     <!--[if lte IE 8]>
     <![endif]-->
     <!--[if !IE]><!-->
      <!--<![endif]-->
-    <script type="text/javascript" rel="script" src="../static/js/commonBuy.js"></script>
-    <script type="text/javascript" rel="script" src="../static/js/cooperationAreaOnload.js"></script>
+    <script type="text/javascript" rel="script" src="/static/js/commonBuy.js"></script>
+    <script type="text/javascript" rel="script" src="/static/js/cooperationAreaOnload.js"></script>
 </body>
 
 </html>

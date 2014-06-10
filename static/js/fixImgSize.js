@@ -1,6 +1,6 @@
-$(function(){
-	$(document).ready(function(){
-		(function(){
+//$(function(){
+//	$(document).ready(function(){
+//		(function(){
 
 			window.fixImgSize = function(imgObj){
 				var imgWidth        = imgObj.width;
@@ -22,6 +22,6 @@ $(function(){
 					$(imgObj).css("display","inline-block");
 				}
 			}
-		})();
-	});
-});
+		//})();
+//	});
+//});

@@ -130,8 +130,10 @@
 	border:1px solid #D1D1D1;
 }
 
-.eachMeidaImg,.cooOrgaImg{
+.eachMeidaImg,.eachOrgImg{
 	display: none;
+	border-width:0px;
+	outline: 0px;
 }
 
 /**********cooperation_List_Right********/
